@@ -57,6 +57,8 @@ Görsele tıklayınca açılır. Büyük görsel, başlık, açıklama, ileri/ge
 
 ### AI Asistan
 
+> Karar (10 Kasım 2026): şimdilik kapsam dışı, yapılmayacak. Aşağısı yalnızca orijinal sitenin tarifidir.
+
 - Sağ altta yüzen sohbet kutusu; başlık, karşılama mesajı, saat damgası, mesaj alanı, "Gönder" butonu.
 - Küçültülebiliyor; 640px altında kapalı başlıyor.
 - Alt bilgi görünür olunca yuvarlak logo balonuna dönüşüyor.
@@ -150,8 +152,8 @@ Orijinalde yaklaşan ve geçmiş etkinlikler ayrı tablolarda. Firestore'da tek 
 1. Tema ve iskelet: renkler, font, responsive düzen, üst menü, alt bilgi, rotalar.
 2. Sabit bölümler: hero, hakkımızda, sosyal medya.
 3. Veri bölümleri sahte veriyle: projeler + filtre/arama, etkinlikler, galeri, ekip ve pencereleri.
-4. Takıma Katıl formu ve asistan arayüzü.
-5. Admin paneli arayüzü (7 rota).
+4. Takıma Katıl formu. (AI asistan şimdilik kapsam dışı.)
+5. Admin paneli arayüzü (7 rota + orijinalde olmayan "Başvurular" ekranı).
 
 Front bittikten sonra: Firebase bağlantısı (bölüm 4'teki eşleme).
 

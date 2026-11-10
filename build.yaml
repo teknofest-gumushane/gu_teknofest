@@ -1,0 +1,16 @@
+# build_runner ayarları (bash tool/codegen.sh). Üreticiler yalnızca lib/ altında çalışır;
+# tool/test/fixtures içindeki sahte Dart dosyaları taranmaz.
+targets:
+  $default:
+    builders:
+      # Typed rotalar: her rota dosyası kendi `part '….g.dart'` satırını taşır.
+      go_router_builder:go_router_builder:
+        generate_for:
+          - lib/product/navigation/**.dart
+      riverpod_generator:
+        generate_for:
+          - lib/**.dart
+        options:
+          provider_name_suffix: "Provider"
+          provider_family_name_suffix: "Provider"
+# json_serializable kökte çalışmaz: modeller packages/tf_data içindedir (kendi build.yaml'ı olacak).

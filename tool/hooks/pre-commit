@@ -1,0 +1,19 @@
+#!/usr/bin/env bash
+# Git pre-commit hook'u: commit'ten önce statik kalite kapısını çalıştırır.
+# Kurulum: bash tool/install_hooks.sh
+# Test çalıştırmaz (hızlı kalsın diye); tam kapı için: bash tool/quality_gate.sh
+set -u
+ROOT="$(git rev-parse --show-toplevel 2>/dev/null)" || exit 0
+cd "$ROOT" || exit 0
+
+# Yalnızca belge ya da yapılandırma değiştiyse kapıyı atla.
+if ! git diff --cached --name-only --diff-filter=ACMR | grep -Eq '\.(dart|arb|rules)$|(^|/)pubspec\.yaml$|^tool/'; then
+  exit 0
+fi
+
+if ! bash tool/quality_gate.sh --static --check-format; then
+  echo
+  echo "pre-commit: kalite kapısı kırmızı, commit durduruldu."
+  echo "Biçimlendirme hatasıysa: dart format lib test packages"
+  exit 1
+fi

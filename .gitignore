@@ -47,6 +47,15 @@ desktop.ini
 *.lcov
 pubspec_overrides.yaml
 
+# Generated code: produced by `bash tool/codegen.sh`, never committed.
+# CI runs codegen before analyze, test and build.
+*.g.dart
+*.gen.dart
+lib/l10n/app_localizations*.dart
+
+# Tool caches (quality gate logs)
+tool/.cache/
+
 # Flutter version managers (the pinned version file .fvmrc stays in the repo)
 .fvm/
 

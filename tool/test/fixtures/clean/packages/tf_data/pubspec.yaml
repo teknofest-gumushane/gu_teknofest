@@ -1,0 +1,8 @@
+name: tf_data
+dependencies:
+  flutter:
+    sdk: flutter
+  cloud_firestore: ^6.10.0
+  equatable: ^2.1.0
+dev_dependencies:
+  flutter_svg: ^2.0.0
