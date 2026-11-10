@@ -31,7 +31,7 @@ gu_teknofest/
 ├── CLAUDE.md  CONTRIBUTING.md
 ├── .claude/                      settings.json, launch.json, skills/, agents/
 ├── .github/                      workflows/ci.yml, ISSUE_TEMPLATE/ (görev, hata, öneri), PULL_REQUEST_TEMPLATE.md
-├── docs/                         analiz, architecture, decisions, packages, token-map
+├── docs/                         ekip-rehberi, analiz, architecture, decisions, packages, token-map
 ├── tool/                         betikler (tool/README.md)
 ├── assets/
 │   ├── README.md                 logo ve yazı tipi notları

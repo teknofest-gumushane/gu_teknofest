@@ -1,7 +1,8 @@
 # Katkı Rehberi
 
-Ekibe yeni katılan biri için: kurulumdan ilk commit'e kadar gereken her şey bu sayfada.
-Kuralların tamamı [`CLAUDE.md`](CLAUDE.md) içindedir.
+Akışın kısa hali bu sayfadadır. İlk kez başlıyorsan ya da yapay zekâ aracını (Claude Code) hiç
+kullanmadıysan önce [`docs/ekip-rehberi.md`](docs/ekip-rehberi.md)'yi oku: kurulum, mimari ve bir özelliği
+yapay zekâ ile baştan sona geliştirme adım adım orada. Kuralların tamamı [`CLAUDE.md`](CLAUDE.md) içindedir.
 
 ## Kurulum
 

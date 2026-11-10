@@ -36,6 +36,7 @@ Her iş **issue → dal → PR** yoluyla `main`'e girer: [`CONTRIBUTING.md`](CON
 
 | Ne | Nerede |
 |---|---|
+| **Yeni başlayanlar: kurulum, mimari, yapay zekâ ile geliştirme** | [`docs/ekip-rehberi.md`](docs/ekip-rehberi.md) |
 | Kurallar (tek doğru kaynak) | [`CLAUDE.md`](CLAUDE.md) |
 | Ekip için kurulum ve günlük akış | [`CONTRIBUTING.md`](CONTRIBUTING.md) |
 | Mimari ve klasör yapısı | [`docs/architecture.md`](docs/architecture.md) |

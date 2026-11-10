@@ -212,6 +212,7 @@ Tüm betikler: [`tool/README.md`](tool/README.md).
 | İzin verilen paketler | `docs/packages.md` |
 | Token eşlemesi (renk, boşluk, yazı) | `docs/token-map.md` |
 | Ekip için kurulum ve akış | `CONTRIBUTING.md` |
+| Ekip rehberi: mimari, yapay zekâ ile geliştirme, skill ve agent kullanımı | `docs/ekip-rehberi.md` |
 | Betikler ve kullanımları | `tool/README.md` |
 | Skill, agent, hook | `.claude/skills/*`, `.claude/agents/*`, `.claude/settings.json` |
 | Issue ve PR şablonları, CI | `.github/ISSUE_TEMPLATE/*`, `.github/PULL_REQUEST_TEMPLATE.md`, `.github/workflows/ci.yml` |
