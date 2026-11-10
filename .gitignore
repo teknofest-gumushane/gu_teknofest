@@ -44,6 +44,9 @@ desktop.ini
 .pub/
 /build/
 /coverage/
+# Yerel paketlerin (packages/*) kendi derleme, test önbelleği ve kapsam çıktıları
+packages/*/build/
+packages/*/coverage/
 *.lcov
 pubspec_overrides.yaml
 
