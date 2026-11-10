@@ -1,0 +1,46 @@
+# Her push ve PR'da kalite kapısını çalıştırır: biçim, kod üretimi, analyze, denetimler, testler.
+# Yerel karşılığı: bash tool/quality_gate.sh --check-format   (bkz. tool/README.md)
+name: CI (kalite kapısı)
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+permissions:
+  contents: read
+
+jobs:
+  gate:
+    name: Kalite kapısı
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - name: Kodu al
+        uses: actions/checkout@v4
+
+      - name: Flutter kur
+        uses: subosito/flutter-action@v2
+        with:
+          flutter-version: 3.44.9
+          channel: stable
+          cache: true
+
+      - name: Kalite kapısı
+        run: bash tool/quality_gate.sh --check-format
+
+      - name: Web derlemesi (duman testi)
+        run: bash tool/build_web.sh --env mock --no-codegen
+
+      - name: Kapı loglarını yükle
+        if: failure()
+        uses: actions/upload-artifact@v4
+        with:
+          name: gate-logs
+          path: tool/.cache/gate-logs/
+          if-no-files-found: ignore
