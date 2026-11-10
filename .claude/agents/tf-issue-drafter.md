@@ -23,7 +23,7 @@ Kapsam: bir bölüm adı, bir alan ("admin paneli") ya da "kalan her şey". Veri
 
 - **Bir görev = bir kişi = bir PR.** Bir bölüm genellikle tek görevdir; büyükse (ör. etkinlikler: liste + görsel penceresi) bağımsız teslim edilebilir parçalara böl.
 - Ortak parça önce gelir: iki görevin de ihtiyaç duyduğu widget ya da yardımcı ayrı bir görev olur ve diğerleri ona bağlanır.
-- Aynı dosyaya dokunan görevleri **aynı anda yürüyemez** diye işaretle (ortak ARB dosyası hariç).
+- Aynı dosyaya dokunan görevleri **aynı anda yürüyemez** diye işaretle (D-31'deki satır ekleme tipi ortak dosyalar hariç).
 - Arayüz fazındayız (D-01): görevler sahte veriyle çalışır; Firebase bağlantısı, güvenlik kuralları ve `firebase_*_repository` ayrı, sonraki faz görevleridir (D-26).
 - İçerik bize aittir: görev metnine referans siteden kopyalanacak metin, görsel ya da kişi adı yazma (`CLAUDE.md §12`). Eksik içerik (ör. kulübün gerçek metinleri) varsa görevde "kullanıcıdan beklenen girdi" olarak belirt.
 - Kabul ölçütleri denetlenebilir olsun. Arayüz görevlerinde şunlar her zaman bulunur: hata / yükleniyor / boş / dolu durumları; 320 / 768 / 1024 / 1440'ta taşma yok; metinler ARB'de; yalnızca token; klavye ile gezilebilirlik ve `Semantics`; view model + state + bölüm testleri; `bash tool/quality_gate.sh` yeşil.

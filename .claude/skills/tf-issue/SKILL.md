@@ -22,7 +22,7 @@ Güvenlik açığı issue olarak açılmaz: yeni issue ekranındaki "Güvenlik a
 - **Bir görev = bir kişi = bir PR.** Tek PR ile kapanamayacak kadar büyükse böl.
 - Başlık sonucu söyler: `[Görev] Projeler: etiket filtresi ve arama`. "Projeler bölümü üzerinde çalış" değil.
 - **Kabul ölçütleri denetlenebilir** maddelerdir (kutucuklu). Her bölüm görevinde şunlar bulunur: dört durum (hata / yükleniyor / boş / dolu), 320 / 768 / 1024 / 1440'ta taşma yok, metinler ARB'de, token kullanımı, testler, kapı yeşil.
-- **Dokunulacak dosyalar** yazılır. İki görev aynı dosyaya dokunuyorsa (ör. `lib/l10n/app_tr.arb` hariç ortak bir widget) birini diğerine bağla; aynı anda yürümesinler.
+- **Dokunulacak dosyalar** yazılır. İki görev aynı dosyaya dokunuyorsa (ör. ortak bir widget) birini diğerine bağla; aynı anda yürümesinler. İstisna: D-31'deki satır ekleme tipi ortak dosyalar (ARB, ikon ve ölçü kayıtları, token eşlemesi).
 - **Kapsam dışı** yazılır: görevin sınırı, bitmiş sayılması için en önemli bilgidir.
 - Referans: `docs/analiz.md` başlığı ve ilgili D-xx. İçerik (metin, görsel, kişi adı) bize aittir; referans siteden kopyalanacak içerik göreve yazılmaz (`CLAUDE.md §12`).
 

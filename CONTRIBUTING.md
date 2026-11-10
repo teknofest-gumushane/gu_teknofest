@@ -71,7 +71,8 @@ Genel sayfanın her bölümü `lib/features/landing/view/section/` altında bir 
 4. Metinleri `lib/l10n/app_tr.arb`'ye ekle; renk, boşluk ve ölçü için token kullan (`docs/token-map.md`).
 5. Test yaz (`test/features/landing/`).
 
-İki kişi aynı dosyaya dokunmasın: bir bölüm = bir kişi.
+İki kişi aynı dosyaya dokunmasın: bir bölüm = bir kişi. Satır eklenen ortak dosyalar (ARB, ikon ve ölçü
+kayıtları, `docs/token-map.md`) bunun dışındadır (D-31).
 
 ## Commit ve PR başlığı
 
