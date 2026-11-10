@@ -8,7 +8,9 @@
 #       --verbose      (adım çıktılarını akıt)
 #   ortam: TF_GATE_STATIC_ONLY=1 (flutter/dart adımlarını atla; yalnızca taramalar ve öz-test)
 #
-# Adımlar: format → codegen → analyze → araç öz-testi → sınırlar → hardcode → hard-delete → test → rules.
+# Adımlar: bağımlılık → format → codegen → analyze → araç öz-testi → sınırlar → hardcode → hard-delete → test → rules.
+# Bağımlılık adımı (flutter pub get) biçim denetiminden önce gelir: paketler çözülmeden dart format analiz
+# ayarlarını ve dil sürümünü bulamaz, taze klonda (CI) her dosyayı "değişmeli" sayar.
 # --fast ve --static üretilmiş dosyaların güncel olduğunu varsayar; değilse önce: bash tool/codegen.sh
 # Başarısız adımın logunun son satırları gösterilir; tam log: tool/.cache/gate-logs/.
 # Not (Claude Code): Bash aracının varsayılan zaman aşımı 2 dk'dır; tam kapı için timeout=600000 ver.
@@ -23,7 +25,7 @@ FAST=0; STATIC=0; CHECK_FMT=0
 VERBOSE="${TF_GATE_VERBOSE:-0}"
 STATIC_ONLY="${TF_GATE_STATIC_ONLY:-0}"
 
-usage() { sed -n '2,15p' "$0" | sed 's/^# \{0,1\}//'; }
+usage() { sed -n '2,17p' "$0" | sed 's/^# \{0,1\}//'; }
 
 while [ $# -gt 0 ]; do
   case "$1" in
@@ -78,6 +80,8 @@ step() {
 skip() { printf '  – %-18s atlandı (%s)\n' "$1" "$2"; }
 
 # ── adım gövdeleri ─────────────────────────────────────────
+do_deps() { flutter pub get; }
+
 fmt_dirs() { local d out=""; for d in lib test integration_test packages; do [ -d "$d" ] && out="$out $d"; done; printf '%s' "$out"; }
 
 do_format() {
@@ -128,8 +132,12 @@ do_rules() {
 echo "Kalite kapısı ($MODE)"
 
 if [ "$STATIC_ONLY" = 1 ]; then
-  skip format "TF_GATE_STATIC_ONLY"; skip codegen "TF_GATE_STATIC_ONLY"; skip analyze "TF_GATE_STATIC_ONLY"
+  skip bagimlilik "TF_GATE_STATIC_ONLY"; skip format "TF_GATE_STATIC_ONLY"
+  skip codegen "TF_GATE_STATIC_ONLY"; skip analyze "TF_GATE_STATIC_ONLY"
 else
+  # Tam kapıda her zaman; ara kontrollerde yalnızca paketler hiç çözülmemişse.
+  if [ "$MODE" = "full" ] || [ ! -f .dart_tool/package_config.json ]; then step bagimlilik do_deps
+  else skip bagimlilik "paketler çözülmüş"; fi
   step format do_format
   if [ "$MODE" = "full" ]; then step codegen bash tool/codegen.sh; else skip codegen "--$MODE"; fi
   step analyze do_analyze

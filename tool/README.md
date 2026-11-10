@@ -77,6 +77,7 @@ bash tool/quality_gate.sh --verbose       # adım çıktılarını akıtır
 
 | Adım | Tam | `--fast` | `--static` |
 |---|---|---|---|
+| bağımlılık (`flutter pub get`) | ✓ | yalnızca paketler hiç çözülmemişse | yalnızca paketler hiç çözülmemişse |
 | format (`dart format`) | ✓ | ✓ | ✓ |
 | codegen | ✓ | – | – |
 | analyze (`--fatal-infos --fatal-warnings`) | ✓ | ✓ | ✓ |
@@ -87,6 +88,8 @@ bash tool/quality_gate.sh --verbose       # adım çıktılarını akıtır
 
 - Bayraksız çalıştırınca `format` adımı dosyaları **yeniden biçimlendirir**. Yalnızca doğrulamak
   için `--check-format` ekle (CI ve pre-commit böyle çalışır).
+- Bağımlılık adımı biçim denetiminden önce gelir: paketler çözülmeden `dart format` analiz ayarlarını
+  bulamaz ve taze klonda her dosyayı "değişmeli" sayar.
 - `--fast` ve `--static` üretilmiş dosyaların güncel olduğunu varsayar. Analyze "dosya bulunamadı"
   diyorsa önce `bash tool/codegen.sh` çalıştır.
 - Başarısız adımın son 40 satırı ekrana yazılır; tam log `tool/.cache/gate-logs/` altındadır.
