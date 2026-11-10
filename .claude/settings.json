@@ -1,0 +1,72 @@
+{
+  "$schema": "https://json.schemastore.org/claude-code-settings.json",
+  "permissions": {
+    "allow": [
+      "Bash(flutter analyze:*)",
+      "Bash(flutter test:*)",
+      "Bash(flutter pub get:*)",
+      "Bash(flutter pub add:*)",
+      "Bash(flutter pub remove:*)",
+      "Bash(flutter pub outdated:*)",
+      "Bash(flutter pub deps:*)",
+      "Bash(flutter gen-l10n:*)",
+      "Bash(flutter build web:*)",
+      "Bash(flutter --version:*)",
+      "Bash(flutter doctor:*)",
+      "Bash(dart analyze:*)",
+      "Bash(dart format:*)",
+      "Bash(dart fix:*)",
+      "Bash(dart run build_runner:*)",
+      "Bash(dart --version:*)",
+      "Bash(git status:*)",
+      "Bash(git diff:*)",
+      "Bash(git log:*)",
+      "Bash(git show:*)",
+      "Bash(git branch:*)",
+      "Bash(git add:*)",
+      "Bash(git commit:*)",
+      "Bash(bash tool/:*)",
+      "Bash(ls:*)",
+      "Bash(grep:*)",
+      "Bash(find:*)",
+      "Edit(lib/**)",
+      "Edit(test/**)",
+      "Edit(packages/**)",
+      "Edit(assets/**)",
+      "Edit(web/**)",
+      "Edit(tool/**)",
+      "Edit(docs/**)",
+      "Edit(pubspec.yaml)",
+      "Edit(analysis_options.yaml)",
+      "Edit(build.yaml)",
+      "Edit(l10n.yaml)",
+      "Edit(.gitignore)"
+    ],
+    "deny": [
+      "Bash(git clean:*)",
+      "Bash(git commit --no-verify:*)",
+      "Bash(git commit:* --no-verify*)",
+      "Bash(git push --force:*)",
+      "Bash(git push -f:*)",
+      "Bash(git reset --hard:*)",
+      "Bash(firebase deploy:*)",
+      "Bash(firebase use:*)",
+      "Bash(firebase login:*)",
+      "Bash(firebase functions:*)",
+      "Bash(firebase firestore:*)"
+    ]
+  },
+  "hooks": {
+    "PostToolUse": [
+      {
+        "matcher": "Edit|Write",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "bash \"$CLAUDE_PROJECT_DIR/tool/hooks/post_edit.sh\""
+          }
+        ]
+      }
+    ]
+  }
+}

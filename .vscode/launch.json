@@ -1,0 +1,30 @@
+{
+  // F5 varsayılanı: sahte veriyle Chrome. Terminal karşılığı: bash tool/dev.sh
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "GÜ Teknofest (sahte veri)",
+      "request": "launch",
+      "type": "dart",
+      "program": "lib/main.dart",
+      "deviceId": "chrome",
+      "toolArgs": ["--dart-define=ENV=mock"]
+    },
+    {
+      "name": "GÜ Teknofest (emülatör)",
+      "request": "launch",
+      "type": "dart",
+      "program": "lib/main.dart",
+      "deviceId": "chrome",
+      "toolArgs": ["--dart-define=ENV=emulator"]
+    },
+    {
+      "name": "GÜ Teknofest (gerçek proje)",
+      "request": "launch",
+      "type": "dart",
+      "program": "lib/main.dart",
+      "deviceId": "chrome",
+      "toolArgs": ["--dart-define=ENV=prod"]
+    }
+  ]
+}
