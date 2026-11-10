@@ -1,0 +1,39 @@
+name: tf_data
+description: GÜ Teknofest veri katmanı — modeller, FirebaseResult, servisler, repository'ler, soft delete (Flutter widget'ı içermez).
+version: 0.1.0
+publish_to: none
+resolution: workspace
+
+environment:
+  sdk: ^3.12.2
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # ── Firebase (arayüz fazında yalnızca derleme için; başlatılmaz — D-26) ──
+  cloud_firestore: ^6.10.0
+  firebase_auth: ^6.7.0
+  firebase_storage: ^13.6.0
+
+  # ── Modeller ve yardımcılar ──
+  equatable: ^2.1.0
+  json_annotation: ^4.12.0
+  meta: ^1.18.0
+  collection: ^1.19.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  # ── Kod üretimi ──
+  build_runner: ^2.15.1
+  json_serializable: ^6.14.1
+
+  # ── Lint ──
+  very_good_analysis: ^10.3.0
+
+  # ── Servis testleri ──
+  fake_cloud_firestore: ^4.3.0
+  firebase_auth_mocks: ^0.15.2
+  firebase_storage_mocks: ^0.8.1

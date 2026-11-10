@@ -1,0 +1,21 @@
+targets:
+  $default:
+    builders:
+      json_serializable:json_serializable:
+        generate_for:
+          - lib/src/models/**_model.dart
+        options:
+          # Modeller Firestore'a doğrudan Map olarak yazılır: iç içe modeller
+          # explicit_to_json olmadan ham Dart nesnesi olarak üretilir ve yazma patlar.
+          explicit_to_json: true
+          # Dart adı = JSON anahtarı.
+          field_rename: none
+          # null alanlar create yükünden düşer.
+          include_if_null: false
+          # CheckedFromJsonException alan adıyla → FirestoreError.parse.
+          checked: true
+          create_field_map: false
+          create_per_field_to_json: false
+          any_map: false
+          # Fazladan alan toleransı (ileri uyumluluk).
+          disallow_unrecognized_keys: false

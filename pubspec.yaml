@@ -15,9 +15,8 @@ environment:
 # ─────────────────────────────────────────────────────────────────────────────
 
 # ── Yerel paketler (workspace) ───────────────────────────────────────────────
-# packages/tf_data oluşturulunca açılacak:
-# workspace:
-#   - packages/tf_data
+workspace:
+  - packages/tf_data
 
 dependencies:
   # ── Flutter SDK ────────────────────────────────────────────────────────────
@@ -48,8 +47,7 @@ dependencies:
   image_picker: ^1.2.4 # admin panelinde görsel seçme
 
   # ── Veri katmanı (yerel paket) ─────────────────────────────────────────────
-  # packages/tf_data oluşturulunca açılacak:
-  # tf_data: ^0.1.0
+  tf_data: ^0.1.0 # modeller, repository'ler, servisler (packages/tf_data)
 
   # ── Firebase (backend fazı) ────────────────────────────────────────────────
   # Backend fazında `flutter pub add` ile eklenecek:
