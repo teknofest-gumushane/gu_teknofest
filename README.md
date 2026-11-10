@@ -26,7 +26,11 @@ bash tool/dev.sh
 bash tool/quality_gate.sh
 ```
 
-Yeşil olmalı. Aynı kapı her push'ta GitHub Actions'ta da çalışır (`.github/workflows/ci.yml`).
+Yeşil olmalı. Aynı kapı her push ve PR'da GitHub Actions'ta da çalışır (`.github/workflows/ci.yml`).
+
+## Katkı akışı
+
+Her iş **issue → dal → PR** yoluyla `main`'e girer: [`CONTRIBUTING.md`](CONTRIBUTING.md).
 
 ## Belgeler
 

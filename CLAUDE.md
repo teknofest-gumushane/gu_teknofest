@@ -20,7 +20,8 @@
 3. **Sapma yok.** Kilitli karar (D-xx) ve `docs/*` sözleşmeleri değişmez. Değiştirmek istiyorsan önce sor;
    onaylanırsa `docs/decisions.md`'ye işle (`tf-decision-log`).
 4. **Kapı yeşil değilse commit yok:** `bash tool/quality_gate.sh` (§11).
-5. **Commit doğrudan `main`'e**, PR ve yan dal yok (D-19). Yalnızca kullanıcı isteyince commit ve push et.
+5. **Akış: issue → dal → PR** (D-27; `tf-issue`, `tf-branch`, `tf-pr`). `main`'e doğrudan commit yalnızca proje sahibinin
+   açık talimatıyla (D-19). Commit, push, issue ve PR yalnızca kullanıcı isteyince; birleştirmeyi Claude kendiliğinden yapmaz.
 6. Kullanıcıya **Türkçe** yaz. Kısa ol: ne yaptın, sonuç, sıradaki adım.
 
 ---
@@ -188,7 +189,9 @@ bash tool/quality_gate.sh --static   # yalnızca statik
 format → codegen → analyze (`--fatal-infos`) → araç öz-testi → sınırlar → hardcode → hard-delete → test.
 Tüm betikler: [`tool/README.md`](tool/README.md).
 
-- Commit: Conventional Commits, açıklama Türkçe. Üretilen dosyalar commit edilmez (D-18).
+- Commit ve PR başlığı: Conventional Commits, açıklama Türkçe. Üretilen dosyalar commit edilmez (D-18).
+- Dal adı `<tür>/<issue-no>-<kısa-ad>`; PR `main`'e, şablonla, `Closes #no` ile; birleştirme squash, CI yeşil + bir onay (D-27).
+- Aynı kapı her push ve PR'da CI'de de çalışır (`.github/workflows/ci.yml`).
 - Kod üreten bir şey değiştiyse (`@riverpod`, rota, model, ARB): `bash tool/codegen.sh`.
 
 ## 12. Yapma listesi
@@ -196,7 +199,8 @@ Tüm betikler: [`tool/README.md`](tool/README.md).
 ❌ Hard delete · ❌ hardcode · ❌ tekrarlı widget · ❌ view'da `GetIt` · ❌ Freezed / AsyncValue ·
 ❌ `google_fonts` · ❌ doğrudan `Icons.*` · ❌ listede olmayan paket (önce sor) · ❌ onaysız `firebase deploy` ·
 ❌ kilitli kararı sormadan değiştirme · ❌ kırmızı kapıyla commit · ❌ `--no-verify` · ❌ üretilen dosyayı commit ·
-❌ onaysız uygulama · ❌ düz metinle seçenekli soru · ❌ referans siteden içerik kopyalama.
+❌ onaysız uygulama · ❌ düz metinle seçenekli soru · ❌ referans siteden içerik kopyalama · ❌ `git push --force` ·
+❌ onaysız issue / PR açma ya da birleştirme · ❌ bir PR'da birden çok issue.
 
 ## 13. Dosya haritası
 
@@ -210,3 +214,4 @@ Tüm betikler: [`tool/README.md`](tool/README.md).
 | Ekip için kurulum ve akış | `CONTRIBUTING.md` |
 | Betikler ve kullanımları | `tool/README.md` |
 | Skill, agent, hook | `.claude/skills/*`, `.claude/agents/*`, `.claude/settings.json` |
+| Issue ve PR şablonları, CI | `.github/ISSUE_TEMPLATE/*`, `.github/PULL_REQUEST_TEMPLATE.md`, `.github/workflows/ci.yml` |

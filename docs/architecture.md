@@ -30,7 +30,7 @@ Ok "import eder" demektir. Tersi yasaktır.
 gu_teknofest/
 ├── CLAUDE.md  CONTRIBUTING.md
 ├── .claude/                      settings.json, launch.json, skills/, agents/
-├── .github/workflows/ci.yml
+├── .github/                      workflows/ci.yml, ISSUE_TEMPLATE/ (görev, hata, öneri), PULL_REQUEST_TEMPLATE.md
 ├── docs/                         analiz, architecture, decisions, packages, token-map
 ├── tool/                         betikler (tool/README.md)
 ├── assets/

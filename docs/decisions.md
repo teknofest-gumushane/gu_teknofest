@@ -23,7 +23,7 @@ kullanıcıya sor, onaylanırsa buraya işle (tarih + gerekçe). Kurallar: [`CLA
 | D-16 | `firebase_app_check` backend fazında eklenir. | Form girişsiz yazma yolu açıyor; spam riski gerçek. | 2026-11-10 |
 | D-17 | AI asistan kutusu şimdilik kapsam dışı. | Kullanıcı kararı; referans sitede de yalnızca sabit cevap veriyor. | 2026-11-10 |
 | D-18 | Üretilen dosyalar (`*.g.dart`, `app_localizations*.dart`) commit edilmez; CI önce kod üretir. | `gu_kulupler` ile aynı. | 2026-11-10 |
-| D-19 | Commit doğrudan `main`'e; yan dal ve PR yok. Conventional Commits, açıklama Türkçe. | Kullanıcı kararı. | 2026-11-10 |
+| D-19 | ~~Commit doğrudan `main`'e; yan dal ve PR yok.~~ → Altyapı turu doğrudan `main`'e işlendi ("commitleri pr açmadan maine at direk"). Bundan sonra `main`'e doğrudan commit yalnızca proje sahibinin açık talimatıyla yapılır; diğer her iş D-27 akışıyla yürür. Conventional Commits, açıklama Türkçe. | Kullanıcı kararı; ardından issue, dal ve PR için şablon, skill ve agent istedi. İkisini bağdaştıran yorum Claude'a aittir; kullanıcı düzeltebilir. | 2026-11-10 |
 | D-20 | Yazı tipi Inter, projeye gömülü; `google_fonts` yok. | Ağ isteği olmadan aynı görünüm. | 2026-11-10 |
 | D-21 | `source_helper` `<1.4.0` sabit. | 1.4.0, `go_router_builder` 4.5.0 ile çakışıyor; düzeltme Dart ≥3.13 istiyor. Dart 3.13'e geçince kaldırılır. | 2026-11-10 |
 | D-22 | Şimdilik web yayını yok; site yerelde çalıştırılır. Yayın iş akışı sonraya kalır. | Kullanıcı kararı. | 2026-11-10 |
@@ -31,6 +31,7 @@ kullanıcıya sor, onaylanırsa buraya işle (tarih + gerekçe). Kurallar: [`CLA
 | D-24 | ~~Logo özgündür; referans sitenin logosu kopyalanmaz. Kulübün resmi logosu gelirse onunla değişir.~~ → Logo, kullanıcının sağladığı resmi TEKNOFEST logosudur ("logo bu olacak"). Dosya olduğu gibi kullanılır: yeniden çizilmez, değiştirilmez; yalnızca küçültülür. Mor zeminde beyaz daire içinde gösterilir. Referans sitenin (başka bir kulübün) logosu yine kopyalanmaz. | Kullanıcı kararı; özgün çizim istenen logo değildi. TEKNOFEST logosu T3 Vakfı'nın tescilli markasıdır; kullanım izni ve kurumsal kimlik kuralları kulübün sorumluluğundadır (`assets/README.md`). | 2026-11-10 |
 | D-25 | Birkaç adımlı işte önce plan gösterilir; kullanıcı onaylamadan uygulanmaz. Seçenekli sorular açılır pencereyle sorulur. | Kullanıcı kararı. | 2026-11-10 |
 | D-26 | `tf_data`'da Firebase altyapısı (servisler, sonuç ve hata tipleri, soft delete) baştan kurulu durur ama arayüz fazında başlatılmaz. `firebase_*_repository` uygulamaları backend fazında, güvenlik kurallarıyla birlikte yazılır. | Backend'e geçiş ekran kodunu değiştirmesin. | 2026-11-10 |
+| D-27 | Ekip işleri **issue → dal → PR** akışıyla yürür. Issue şablonları: görev, hata, öneri (boş issue kapalı). Dal adı `<tür>/<issue-no>-<kısa-ad>`. PR `main`'e açılır, başlığı Conventional Commits + Türkçe, gövdesi şablondan, `Closes #no` içerir. Birleştirme koşulu: CI yeşil + en az bir onay; yöntem squash; birleştiren proje sahibi ya da yetki verdiği kişi. PR açıldıktan sonra force push ve rebase yok. Claude onaysız issue ya da PR açmaz, birleştirmez. | Kullanıcı isteği ("issues template olsun ve pr branch açma bunların da skilli ve agentleri olsun"). Dal adı ve PR kuralları `gu_kulupler` ile aynı; issue numarası, squash ve onay koşulu Claude'un eklediği ayrıntılardır. | 2026-11-10 |
 
 ## Açık konular
 

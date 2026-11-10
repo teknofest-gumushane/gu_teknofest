@@ -1,0 +1,88 @@
+name: 🧩 Görev
+description: Yapılacak bir iş kalemi (bir bölüm, bir ekran, bir altyapı parçası). Bir görev = bir kişi = bir PR.
+title: "[Görev] "
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Görevi tek bir konuya odakla: bir issue tek bir PR ile kapanabilmeli. Kurallar: [CLAUDE.md](https://github.com/teknofest-gumushane/gu_teknofest/blob/main/CLAUDE.md), akış: [CONTRIBUTING.md](https://github.com/teknofest-gumushane/gu_teknofest/blob/main/CONTRIBUTING.md).
+  - type: textarea
+    id: ne
+    attributes:
+      label: Ne yapılacak?
+      description: Bir iki cümleyle sonuç. "Nasıl" değil "ne".
+      placeholder: Projeler bölümü, sahte veriden gelen projeleri etiket filtresi ve aramayla kart ızgarasında gösterir.
+    validations:
+      required: true
+  - type: dropdown
+    id: alan
+    attributes:
+      label: Alan
+      options:
+        - Genel sayfa — bölüm
+        - Genel sayfa — üst bar / alt bilgi / pencere
+        - Admin paneli
+        - Admin girişi (auth)
+        - Veri katmanı (tf_data)
+        - Tema / ortak widget
+        - Araçlar / CI
+        - Belgeler
+    validations:
+      required: true
+  - type: dropdown
+    id: bolum
+    attributes:
+      label: Bölüm
+      description: Genel sayfa görevi değilse "Yok".
+      options:
+        - Yok
+        - Hero
+        - Hakkımızda
+        - Projeler
+        - Etkinlikler
+        - Galeri
+        - Ekibimiz
+        - Sosyal medya
+        - Takıma Katıl formu
+        - Alt bilgi
+    validations:
+      required: true
+  - type: textarea
+    id: kabul
+    attributes:
+      label: Kabul ölçütleri
+      description: Görev ne zaman bitmiş sayılır? Her madde denetlenebilir olsun.
+      placeholder: |
+        - [ ] Hata, yükleniyor, boş ve dolu durumlarının dördü de var
+        - [ ] 320 / 768 / 1024 / 1440 genişliklerinde taşma yok
+        - [ ] Metinler ARB'de; renk, boşluk ve ölçüler token
+        - [ ] View model, state ve bölüm için test yazıldı
+        - [ ] `bash tool/quality_gate.sh` yeşil
+    validations:
+      required: true
+  - type: textarea
+    id: dosyalar
+    attributes:
+      label: Dokunulacak dosyalar
+      description: Tahmini liste. İki görev aynı dosyaya dokunuyorsa birini diğerine bağla.
+      placeholder: |
+        lib/features/landing/view/section/projects_section.dart
+        lib/features/landing/provider/projects_view_model.dart
+        lib/l10n/app_tr.arb
+  - type: textarea
+    id: kapsam-disi
+    attributes:
+      label: Kapsam dışı
+      description: Bu görevde yapılmayacak, karıştırılmaması gereken şeyler.
+  - type: input
+    id: referans
+    attributes:
+      label: Referans
+      description: docs/analiz.md'deki ilgili başlık ya da karar numarası.
+      placeholder: docs/analiz.md §1 "Projeler" · D-12
+  - type: input
+    id: bagimlilik
+    attributes:
+      label: Bağımlı olduğu görevler
+      placeholder: "#12, #15"

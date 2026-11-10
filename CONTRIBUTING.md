@@ -26,15 +26,37 @@ bash tool/dev.sh
 Site Chrome'da sahte veriyle açılır. Firebase hesabı ya da ayarı gerekmez.
 VS Code kullanıyorsan F5 de aynı şeyi yapar.
 
-## Günlük akış
+## Akış: issue → dal → PR
 
-1. `git pull`
-2. Kod üreten bir şey değiştiyse (`@riverpod`, rota, model, ARB): `bash tool/codegen.sh`
-3. Yaz, dene. Ara kontrol: `bash tool/quality_gate.sh --fast`
-4. Commit öncesi: `bash tool/quality_gate.sh` — yeşil olmalı
-5. Commit ve `git push` (doğrudan `main`; PR yok)
+Her iş bir issue ile başlar, kendi dalında yürür ve bir PR ile `main`'e girer.
 
-Başkası aynı anda push ettiyse: `git pull --rebase`, sonra tekrar push.
+1. **Issue:** GitHub'da "New issue" → **Görev** şablonu. Bir görev = bir kişi = bir PR.
+   Var olan bir görevi alıyorsan issue'ya yorum yazıp üzerine aldığını belirt.
+2. **Dal:** `main`'den, adı `<tür>/<issue-no>-<kısa-ad>`:
+
+   ```bash
+   git switch main && git pull --ff-only origin main && git switch -c feat/12-projeler-bolumu
+   ```
+
+   Türler: `feat`, `fix`, `docs`, `refactor`, `test`, `chore`, `ci`. Küçük harf, tire, Türkçe karaktersiz.
+3. **Çalış:** kod üreten bir şey değiştiyse (`@riverpod`, rota, model, ARB) `bash tool/codegen.sh`.
+   Ara kontrol: `bash tool/quality_gate.sh --fast`.
+4. **Kapı:** `bash tool/quality_gate.sh` — yeşil olmalı.
+5. **PR:** dalı push'la ve `main`'e PR aç; şablonu doldur, `Closes #12` yaz.
+
+   ```bash
+   git push -u origin feat/12-projeler-bolumu
+   ```
+
+6. **İnceleme:** CI yeşil ve en az bir onay gerekir. Yorumları yeni commit'lerle karşıla;
+   PR açıldıktan sonra `git push --force` ve `git rebase` yok. `main` ilerlediyse `git merge origin/main`.
+7. **Birleştirme:** squash ile, proje sahibi ya da yetki verdiği kişi tarafından. Sonra:
+
+   ```bash
+   git switch main && git pull --ff-only origin main && git branch -d feat/12-projeler-bolumu
+   ```
+
+`main`'e doğrudan commit atılmaz; tek istisna proje sahibinin açıkça istediği altyapı işleridir.
 
 ## Bir bölüme başlarken
 
@@ -50,9 +72,9 @@ Genel sayfanın her bölümü `lib/features/landing/view/section/` altında bir 
 
 İki kişi aynı dosyaya dokunmasın: bir bölüm = bir kişi.
 
-## Commit mesajı
+## Commit ve PR başlığı
 
-Conventional Commits, açıklama Türkçe:
+Conventional Commits, açıklama Türkçe. PR squash ile birleştiği için PR başlığı `main`'deki commit mesajı olur:
 
 ```
 feat(landing): projeler bölümüne etiket filtresi ekle
@@ -66,6 +88,8 @@ docs: token tablosuna yeni gölgeyi ekle
 |---|---|
 | Analyze "dosya bulunamadı" ya da `part` hatası veriyor | `bash tool/codegen.sh` |
 | Commit durdu, "kalite kapısı kırmızı" yazıyor | Çıktıdaki ilk hatayı düzelt; biçimlendirme ise `dart format lib test packages` |
+| PR'da CI kırmızı | Actions sekmesinde başarısız adımı aç; yerelde `bash tool/quality_gate.sh --check-format` ile yeniden üret |
+| Dalın `main`'in gerisinde, çakışma var | `git merge origin/main`, çakışmayı çöz, `bash tool/codegen.sh`, kapıyı çalıştır |
 | Hardcode denetimi sayı ya da renge takıldı | `docs/token-map.md`'deki token'ı kullan; yoksa token'ı ekle |
 | Bilinçli bir istisna gerekiyor | Satıra `// ignore-hardcode: <gerekçe>` yaz |
 

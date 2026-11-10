@@ -13,7 +13,7 @@ bash tool/quality_gate.sh --check-format  # biçimlendirmeyi uygulamaz, yalnızc
 bash tool/quality_gate.sh --verbose       # adım çıktılarını akıtır
 ```
 
-Sıra: **format → codegen → analyze (`--fatal-infos --fatal-warnings`) → araç öz-testi → sınırlar → hardcode → hard-delete → test → rules** (yalnızca `firebase/package.json` varsa; backend fazı). Kırmızıyken **commit yok**, `--no-verify` yok (`CLAUDE.md §11`, `§12`). Betiklerin tamamı: `tool/README.md`.
+Sıra: **bağımlılık (`flutter pub get`) → format → codegen → analyze (`--fatal-infos --fatal-warnings`) → araç öz-testi → sınırlar → hardcode → hard-delete → test → rules** (yalnızca `firebase/package.json` varsa; backend fazı). Kırmızıyken **commit yok**, `--no-verify` yok (`CLAUDE.md §11`, `§12`). Betiklerin tamamı: `tool/README.md`.
 
 ## Modlar
 
@@ -39,6 +39,7 @@ Sıra: **format → codegen → analyze (`--fatal-infos --fatal-warnings`) → a
 
 | Adım | Tipik sebep | Çözüm |
 |---|---|---|
+| bağımlılık | `pubspec.yaml` çözülemiyor (sürüm çakışması, ağ) | Hata mesajındaki paketi düzelt; `docs/packages.md` sürüm politikası |
 | format | biçimlenmemiş dosya (`--check-format`) | `dart format lib test packages` |
 | codegen | `@riverpod`, rota, model ya da ARB hatası | Hatayı düzelt; gerekirse `bash tool/codegen.sh --clean` |
 | analyze | `very_good_analysis`, `--fatal-infos`; eksik `*.g.dart` | Kodu düzelt; `// ignore:` yalnızca gerekçeli; eksik dosya → codegen |
@@ -56,4 +57,4 @@ Sıra: **format → codegen → analyze (`--fatal-infos --fatal-warnings`) → a
 
 ## Rapor
 
-Kapı sonucunu kullanıcıya tek satırda ver ("Kapı yeşil: 8/8 adım, 95 sn"). Kırmızıyı örtbas etme: başarısız adımı ve ilk hatayı yaz.
+Kapı sonucunu kullanıcıya tek satırda ver ("Kapı yeşil: 9/9 adım, 95 sn"). Kırmızıyı örtbas etme: başarısız adımı ve ilk hatayı yaz.

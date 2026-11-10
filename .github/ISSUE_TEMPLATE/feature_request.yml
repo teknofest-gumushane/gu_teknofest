@@ -1,0 +1,38 @@
+name: 💡 Öneri
+description: Yeni bir özellik ya da iyileştirme öner. Kapsamı belli bir iş için "Görev" şablonunu kullan.
+title: "[Öneri] "
+labels: ["enhancement"]
+body:
+  - type: textarea
+    id: sorun
+    attributes:
+      label: Hangi sorunu çözüyor?
+      placeholder: Ziyaretçi geçmiş etkinliklerin görsellerine telefonda rahat bakamıyor.
+    validations:
+      required: true
+  - type: textarea
+    id: cozum
+    attributes:
+      label: Önerdiğin çözüm
+    validations:
+      required: true
+  - type: dropdown
+    id: kim
+    attributes:
+      label: Kimin işine yarar?
+      multiple: true
+      options:
+        - Ziyaretçi
+        - Kulüp yönetimi (admin paneli)
+        - Geliştirici
+    validations:
+      required: true
+  - type: textarea
+    id: alternatif
+    attributes:
+      label: Düşündüğün alternatifler
+  - type: textarea
+    id: ek
+    attributes:
+      label: Ek bilgi / görsel
+      description: Kilitli bir kararı (docs/decisions.md, D-xx) değiştiriyorsa numarasını yaz.

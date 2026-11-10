@@ -1,0 +1,71 @@
+name: 🐞 Hata bildirimi
+description: Sitede beklendiği gibi çalışmayan bir şey bildir.
+title: "[Hata] "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Bildirdiğin için teşekkürler! **Güvenlik açıklarını burada bildirme**; yeni issue ekranındaki "Güvenlik açığı bildir" bağlantısını kullan.
+  - type: textarea
+    id: ozet
+    attributes:
+      label: Ne oldu?
+      description: Hatayı kısaca anlat.
+      placeholder: Çekmece menüden "Galeri"ye basınca menü kapanıyor ama sayfa kaymıyor.
+    validations:
+      required: true
+  - type: textarea
+    id: adimlar
+    attributes:
+      label: Yeniden üretme adımları
+      placeholder: |
+        1. Siteyi telefonda aç
+        2. Menü butonuna bas
+        3. "Galeri"ye bas
+    validations:
+      required: true
+  - type: textarea
+    id: beklenen
+    attributes:
+      label: Beklenen davranış
+    validations:
+      required: true
+  - type: dropdown
+    id: genislik
+    attributes:
+      label: Ekran
+      options:
+        - Telefon (640 px altı)
+        - Tablet (640 – 1023 px)
+        - Masaüstü (1024 px ve üstü)
+        - Hepsi
+    validations:
+      required: true
+  - type: dropdown
+    id: tarayici
+    attributes:
+      label: Tarayıcı
+      options:
+        - Chrome
+        - Safari
+        - Firefox
+        - Edge
+        - Diğer
+    validations:
+      required: true
+  - type: dropdown
+    id: ortam
+    attributes:
+      label: Ortam
+      options:
+        - Yerel — sahte veri (bash tool/dev.sh)
+        - Yerel — emülatör
+        - Yayındaki site
+    validations:
+      required: true
+  - type: textarea
+    id: ek
+    attributes:
+      label: Ekran görüntüsü / kayıt / konsol çıktısı
+      description: Kişisel veri (ad, e-posta, telefon) içeriyorsa önce gizle.
