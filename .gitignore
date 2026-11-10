@@ -1,0 +1,123 @@
+# Miscellaneous
+*.class
+*.log
+*.pyc
+*.swp
+.DS_Store
+.atom/
+.build/
+.buildlog/
+.history
+.svn/
+.swiftpm/
+migrate_working_dir/
+
+# OS files
+Thumbs.db
+ehthumbs.db
+desktop.ini
+*~
+*.tmp
+*.bak
+*.orig
+
+# IntelliJ related
+*.iml
+*.ipr
+*.iws
+.idea/
+
+# VS Code: shared launch/tasks/extension configs stay in the repo,
+# everything else in the folder is personal.
+.vscode/*
+!.vscode/launch.json
+!.vscode/tasks.json
+!.vscode/extensions.json
+
+# Flutter/Dart/Pub related
+**/doc/api/
+**/ios/Flutter/.last_build_id
+.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+.pub-cache/
+.pub/
+/build/
+/coverage/
+*.lcov
+pubspec_overrides.yaml
+
+# Flutter version managers (the pinned version file .fvmrc stays in the repo)
+.fvm/
+
+# Golden test failure output
+**/failures/*.png
+
+# Symbolication related
+app.*.symbols
+
+# Obfuscation related
+app.*.map.json
+
+# Android Studio will place build artifacts here
+/android/app/debug
+/android/app/profile
+/android/app/release
+
+# Secrets and environment files (never commit these)
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p8
+*.p12
+*.jks
+*.keystore
+**/android/key.properties
+**/android/local.properties
+
+# Firebase
+# firebase.json, .firebaserc, firestore.rules and lib/firebase_options.dart
+# are meant to be committed. Service account keys are not.
+.firebase/
+firebase-debug.log*
+firestore-debug.log*
+database-debug.log*
+pubsub-debug.log*
+ui-debug.log*
+.runtimeconfig.json
+*serviceAccount*.json
+*service-account*.json
+*-firebase-adminsdk-*.json
+/emulator-data/
+
+# Cloud Functions (if added later)
+node_modules/
+**/functions/lib/
+**/functions/.env*
+
+# iOS / macOS (if these platforms are added later)
+**/Pods/
+**/.symlinks/
+**/xcuserdata/
+**/DerivedData/
+*.xcuserstate
+**/ios/Flutter/Generated.xcconfig
+**/ios/Flutter/flutter_export_environment.sh
+**/macos/Flutter/ephemeral/
+
+# Android (if this platform is added later)
+**/android/.gradle/
+**/android/captures/
+**/android/app/google-services.json.bak
+*.apk
+*.aab
+
+# Windows / Linux desktop (if added later)
+**/windows/flutter/ephemeral/
+**/linux/flutter/ephemeral/
+
+# AI assistant local settings
+.claude/settings.local.json
+.claude/worktrees/
