@@ -28,7 +28,7 @@ kullanıcıya sor, onaylanırsa buraya işle (tarih + gerekçe). Kurallar: [`CLA
 | D-21 | `source_helper` `<1.4.0` sabit. | 1.4.0, `go_router_builder` 4.5.0 ile çakışıyor; düzeltme Dart ≥3.13 istiyor. Dart 3.13'e geçince kaldırılır. | 2026-11-10 |
 | D-22 | Şimdilik web yayını yok; site yerelde çalıştırılır. Yayın iş akışı sonraya kalır. | Kullanıcı kararı. | 2026-11-10 |
 | D-23 | Altyapı turu: üst bar, çekmece menü, yer tutucu bölümler. Admin kabuğu sonraki tur. | Kullanıcı kararı. | 2026-11-10 |
-| D-24 | Logo özgündür; referans sitenin logosu kopyalanmaz. Kulübün resmi logosu gelirse onunla değişir. | Referans logo başka bir kulübe, içindeki TEKNOFEST yazı karakteri T3 Vakfı'na ait. | 2026-11-10 |
+| D-24 | ~~Logo özgündür; referans sitenin logosu kopyalanmaz. Kulübün resmi logosu gelirse onunla değişir.~~ → Logo, kullanıcının sağladığı resmi TEKNOFEST logosudur ("logo bu olacak"). Dosya olduğu gibi kullanılır: yeniden çizilmez, değiştirilmez; yalnızca küçültülür. Mor zeminde beyaz daire içinde gösterilir. Referans sitenin (başka bir kulübün) logosu yine kopyalanmaz. | Kullanıcı kararı; özgün çizim istenen logo değildi. TEKNOFEST logosu T3 Vakfı'nın tescilli markasıdır; kullanım izni ve kurumsal kimlik kuralları kulübün sorumluluğundadır (`assets/README.md`). | 2026-11-10 |
 | D-25 | Birkaç adımlı işte önce plan gösterilir; kullanıcı onaylamadan uygulanmaz. Seçenekli sorular açılır pencereyle sorulur. | Kullanıcı kararı. | 2026-11-10 |
 | D-26 | `tf_data`'da Firebase altyapısı (servisler, sonuç ve hata tipleri, soft delete) baştan kurulu durur ama arayüz fazında başlatılmaz. `firebase_*_repository` uygulamaları backend fazında, güvenlik kurallarıyla birlikte yazılır. | Backend'e geçiş ekran kodunu değiştirmesin. | 2026-11-10 |
 
@@ -36,6 +36,7 @@ kullanıcıya sor, onaylanırsa buraya işle (tarih + gerekçe). Kurallar: [`CLA
 
 - **Inter Bold (700):** `gu_kulupler`'de yalnızca 400 / 500 / 600 ağırlıkları var. Referans sitede ana başlık 700.
   Kalın dosyası eklenene kadar başlıklarda 600 kullanılır.
-- **Kulübün resmi logosu ve tam adı:** gelene kadar özgün yer tutucu logo ve
-  "Gümüşhane Üniversitesi Teknofest Kulübü" adı kullanılır.
+- **Kulübün tam adı:** kesinleşene kadar "Gümüşhane Üniversitesi Teknofest Kulübü" kullanılır.
+- **Tarayıcı ikonları:** `web/icons/*` logonun küçültülmüş halidir; maskelenebilir ikonlar için ayrı,
+  kenar boşluklu bir sürüm hazırlanmadı.
 - **Web yayın yeri:** D-22 kalkınca seçilecek (GitHub Pages ya da Firebase Hosting).

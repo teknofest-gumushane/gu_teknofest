@@ -1,0 +1,57 @@
+{
+  "@@locale": "tr",
+
+  "appTitle": "GÜ Teknofest Kulübü",
+  "@appTitle": { "description": "Tarayıcı sekmesi başlığı." },
+
+  "brandName": "Teknofest Kulübü",
+  "@brandName": { "description": "Üst bardaki marka adı." },
+  "brandUniversity": "Gümüşhane Üniversitesi",
+  "@brandUniversity": { "description": "Marka adının üstündeki üniversite adı." },
+  "logoSemantics": "TEKNOFEST logosu",
+  "@logoSemantics": { "description": "Logonun ekran okuyucu etiketi." },
+
+  "navHome": "Sayfanın başına git",
+  "@navHome": { "description": "Üst bardaki logonun ekran okuyucu etiketi." },
+  "navAbout": "Hakkımızda",
+  "navProjects": "Projeler",
+  "navEvents": "Etkinlikler",
+  "navGallery": "Galeri",
+  "navTeam": "Ekibimiz",
+  "navSocials": "Sosyal Medya",
+  "navJoin": "Takıma Katıl",
+  "navOpenMenu": "Menüyü aç",
+  "navCloseMenu": "Menüyü kapat",
+  "navMenuTitle": "Menü",
+
+  "heroEyebrow": "Gümüşhane Üniversitesi",
+  "heroTitle": "Teknofest Kulübü",
+  "heroSubtitle": "Teknoloji üretmek isteyen öğrencilerin buluştuğu, birlikte öğrenip birlikte geliştirdiği kulüp.",
+
+  "aboutEyebrow": "Hakkımızda",
+  "aboutTitle": "Kulübümüzü tanıyın",
+  "projectsEyebrow": "Projeler",
+  "projectsTitle": "Üzerinde çalıştıklarımız",
+  "eventsEyebrow": "Etkinlikler",
+  "eventsTitle": "Buluşmalarımız",
+  "galleryEyebrow": "Galeri",
+  "galleryTitle": "Kulüpten kareler",
+  "teamEyebrow": "Ekibimiz",
+  "teamTitle": "Kulübü yürütenler",
+  "socialsEyebrow": "Sosyal Medya",
+  "socialsTitle": "Bizi takip edin",
+
+  "comingSoonTitle": "Bu bölüm yakında gelecek",
+  "comingSoonBody": "Ekibimiz bu bölüm üzerinde çalışıyor.",
+  "joinComingSoon": "Başvuru formu yakında açılacak.",
+
+  "footerCopyright": "© {year} Gümüşhane Üniversitesi Teknofest Kulübü",
+  "@footerCopyright": {
+    "description": "Alt bilgideki telif satırı.",
+    "placeholders": { "year": { "type": "String", "example": "2026" } }
+  },
+
+  "notFoundTitle": "Sayfa bulunamadı",
+  "notFoundBody": "Aradığınız sayfa taşınmış ya da hiç var olmamış olabilir.",
+  "notFoundBack": "Ana sayfaya dön"
+}

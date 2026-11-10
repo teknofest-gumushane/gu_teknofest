@@ -63,6 +63,8 @@ Sayfa kenar boşluğu: mobil `s16`, tablet `s24`, masaüstü `s32`. Bölüm dike
 | `contentMaxWidth` | 1152 | İçerik en fazla genişliği |
 | `headerLogoLarge` | 72 | Üst bar logosu, sayfa başında |
 | `headerLogoSmall` | 44 | Üst bar logosu, kaydırınca |
+| `notFoundLogo` | 160 | Bulunamadı sayfasındaki logo |
+| `logoPlateContentFactor` | 0.72 | Beyaz daire zeminli logoda görselin daireye oranı |
 | `tapTarget` | 44 | En küçük dokunma alanı, ikon butonlar |
 | `iconSm` / `iconMd` / `iconLg` | 16 / 20 / 24 | İkon boyutları |
 | `drawerWidth` | 320 | Çekmece menü genişliği |

@@ -1,46 +1,53 @@
 <!DOCTYPE html>
-<html>
+<html lang="tr">
 <head>
-  <!--
-    If you are serving your web app in a path other than the root, change the
-    href value below to reflect the base path you are serving from.
-
-    The path provided below has to start and end with a slash "/" in order for
-    it to work correctly.
-
-    For more details:
-    * https://developer.mozilla.org/en-US/docs/Web/HTML/Element/base
-
-    This is a placeholder for base href that will be replaced by the value of
-    the `--base-href` argument provided to `flutter build`.
-  -->
+  <!-- flutter build --base-href değeri buraya yazılır. -->
   <base href="$FLUTTER_BASE_HREF">
 
   <meta charset="UTF-8">
-  <meta content="IE=Edge" http-equiv="X-UA-Compatible">
-  <meta name="description" content="A new Flutter project.">
-
-  <!-- iOS meta tags & icons -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Gümüşhane Üniversitesi Teknofest Kulübü: projeler, etkinlikler ve ekip.">
+  <meta name="theme-color" content="#682D8B">
   <meta name="mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="black">
-  <meta name="apple-mobile-web-app-title" content="gu_teknofest">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="GÜ Teknofest">
+
+  <link rel="icon" type="image/png" href="favicon.png">
   <link rel="apple-touch-icon" href="icons/Icon-192.png">
-
-  <!-- Favicon -->
-  <link rel="icon" type="image/png" href="favicon.png"/>
-
-  <title>gu_teknofest</title>
   <link rel="manifest" href="manifest.json">
+
+  <title>GÜ Teknofest Kulübü</title>
+
+  <!-- Flutter ilk kareyi çizene kadar görünen yükleme ekranı. -->
+  <style>
+    html, body { height: 100%; margin: 0; background: #F8F9FA; }
+    #loading {
+      position: fixed; inset: 0; display: flex; flex-direction: column;
+      align-items: center; justify-content: center; gap: 16px;
+      font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+      font-size: 14px; color: #1B3C73;
+    }
+    #loading .spinner {
+      width: 40px; height: 40px; border-radius: 50%;
+      border: 3px solid rgba(47, 151, 193, 0.2); border-top-color: #2F97C1;
+      animation: tf-spin 1s linear infinite;
+    }
+    @keyframes tf-spin { to { transform: rotate(360deg); } }
+    @media (prefers-reduced-motion: reduce) { #loading .spinner { animation: none; } }
+  </style>
 </head>
 <body>
-  <!--
-    You can customize the "flutter_bootstrap.js" script.
-    This is useful to provide a custom configuration to the Flutter loader
-    or to give the user feedback during the initialization process.
+  <div id="loading" role="status" aria-live="polite">
+    <div class="spinner" aria-hidden="true"></div>
+    <span>Yükleniyor…</span>
+  </div>
 
-    For more details:
-    * https://docs.flutter.dev/platform-integration/web/initialization
-  -->
+  <script>
+    window.addEventListener('flutter-first-frame', function () {
+      var loading = document.getElementById('loading');
+      if (loading) loading.remove();
+    });
+  </script>
   <script src="flutter_bootstrap.js" async></script>
 </body>
 </html>

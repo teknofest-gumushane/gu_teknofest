@@ -1,12 +1,12 @@
 {
-    "name": "gu_teknofest",
-    "short_name": "gu_teknofest",
+    "name": "Gümüşhane Üniversitesi Teknofest Kulübü",
+    "short_name": "GÜ Teknofest",
     "start_url": ".",
     "display": "standalone",
-    "background_color": "#0175C2",
-    "theme_color": "#0175C2",
-    "description": "A new Flutter project.",
-    "orientation": "portrait-primary",
+    "background_color": "#F8F9FA",
+    "theme_color": "#682D8B",
+    "description": "Gümüşhane Üniversitesi Teknofest Kulübü: projeler, etkinlikler ve ekip.",
+    "orientation": "any",
     "prefer_related_applications": false,
     "icons": [
         {
@@ -31,5 +31,6 @@
             "type": "image/png",
             "purpose": "maskable"
         }
-    ]
+    ],
+    "lang": "tr"
 }

@@ -34,9 +34,10 @@ gu_teknofest/
 ├── docs/                         analiz, architecture, decisions, packages, token-map
 ├── tool/                         betikler (tool/README.md)
 ├── assets/
-│   ├── fonts/                    Inter
-│   ├── images/                   logo
-│   ├── icons/                    SVG ikonlar
+│   ├── README.md                 logo ve yazı tipi notları
+│   ├── fonts/                    Inter (400, 500, 600)
+│   ├── images/                   logo.png
+│   ├── icons/                    SVG ikonlar (ilk SVG ikonla birlikte oluşturulur)
 │   └── mock/                     club_info.json, projects.json, events.json, members.json, gallery.json
 ├── packages/tf_data/
 │   └── lib/
@@ -59,20 +60,22 @@ gu_teknofest/
 │   │   └── session/              session_view_model.dart, session_state.dart
 │   ├── product/
 │   │   ├── theme/                tf_colors, tf_spacing, tf_radius, tf_sizes, tf_typography, tf_shadows,
-│   │   │                         tf_motion, tf_breakpoints, tf_theme, tf_theme_extension
+│   │   │                         tf_gradients, tf_motion, tf_breakpoints, tf_theme, tf_theme_extension
 │   │   ├── icon/                 tf_icons.dart, tf_icon.dart
 │   │   ├── extension/            build_context_x, build_context_l10n_x, build_context_responsive_x, string_x
+│   │   ├── form/                 form_field_error.dart
 │   │   ├── mixin/                external_link_mixin, form_validation_mixin
-│   │   ├── navigation/           app_router.dart, routes/
+│   │   ├── navigation/           app_router.dart, not_found_view.dart, routes/app_routes.dart
 │   │   └── widget/               tf_section_frame, tf_coming_soon, tf_button, tf_logo, tf_max_width_box
 │   ├── features/
 │   │   ├── landing/
-│   │   │   ├── provider/         bölüm başına view_model + state
-│   │   │   └── view/             landing_view.dart, mixin/, section/, widget/
+│   │   │   ├── provider/         bölüm başına view_model + state (bölümler yazıldıkça)
+│   │   │   └── view/             landing_view.dart, landing_section_id.dart, mixin/, section/, widget/
 │   │   ├── auth/                 (sonraki tur)
 │   │   └── admin/                (sonraki tur; gecikmeli yüklenir)
 │   └── l10n/                     app_tr.arb
-└── test/                         helpers/, fakes/, core/, product/, features/
+└── test/                         flutter_test_config.dart, helpers/, fakes/, core/, product/,
+                                  features/, data/
 ```
 
 ## 3. Veri akışı
