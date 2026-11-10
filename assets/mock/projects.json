@@ -1,0 +1,48 @@
+[
+  {
+    "id": "p01",
+    "name": "Örnek Proje: Otonom Araç",
+    "description": "Sahte veridir. Engel algılayan ve çizgi izleyen küçük bir kara aracı prototipi.",
+    "tags": ["Robotik", "Otonom"],
+    "status": "active",
+    "displayOrder": 1,
+    "isDeleted": false,
+    "createdAt": "2026-09-01T09:00:00Z",
+    "updatedAt": "2026-10-20T09:00:00Z"
+  },
+  {
+    "id": "p02",
+    "name": "Örnek Proje: Görüntü Sınıflandırma",
+    "description": "Sahte veridir. Açık veri kümesiyle eğitilen bir görüntü sınıflandırma modeli denemesi.",
+    "tags": ["Yapay Zekâ", "Sağlık"],
+    "status": "active",
+    "displayOrder": 2,
+    "isDeleted": false,
+    "createdAt": "2026-09-05T09:00:00Z",
+    "updatedAt": "2026-10-21T09:00:00Z"
+  },
+  {
+    "id": "p03",
+    "name": "Örnek Proje: Kulüp Web Sitesi",
+    "description": "Sahte veridir. Kulübün etkinliklerini ve projelerini tanıtan bu sitenin kendisi.",
+    "tags": ["Web"],
+    "status": "completed",
+    "displayOrder": 3,
+    "isDeleted": false,
+    "createdAt": "2026-09-10T09:00:00Z",
+    "updatedAt": "2026-10-22T09:00:00Z"
+  },
+  {
+    "id": "p04",
+    "name": "Örnek Proje: Silinmiş Kayıt",
+    "description": "Sahte veridir. Silinmiş olarak işaretlidir; listelerde görünmemelidir.",
+    "tags": ["Robotik"],
+    "status": "active",
+    "displayOrder": 4,
+    "isDeleted": true,
+    "deletedAt": "2026-10-25T09:00:00Z",
+    "deletedBy": "mock-admin",
+    "createdAt": "2026-09-12T09:00:00Z",
+    "updatedAt": "2026-10-25T09:00:00Z"
+  }
+]

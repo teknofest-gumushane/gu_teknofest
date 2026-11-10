@@ -1,0 +1,62 @@
+[
+  {
+    "id": "g01",
+    "title": "Örnek Görsel 1",
+    "description": "Sahte veridir. Kulüp çalışmalarından bir kare için yer tutucu.",
+    "imagePath": "gallery/g01/20261001T100001Z_0000000000000001.jpg",
+    "displayOrder": 1,
+    "isDeleted": false,
+    "createdAt": "2026-10-01T10:00:00Z",
+    "updatedAt": "2026-10-01T10:00:00Z"
+  },
+  {
+    "id": "g02",
+    "title": "Örnek Görsel 2",
+    "description": "Sahte veridir. Kulüp çalışmalarından bir kare için yer tutucu.",
+    "imagePath": "gallery/g02/20261001T100002Z_0000000000000002.jpg",
+    "displayOrder": 2,
+    "isDeleted": false,
+    "createdAt": "2026-10-01T10:00:00Z",
+    "updatedAt": "2026-10-01T10:00:00Z"
+  },
+  {
+    "id": "g03",
+    "title": "Örnek Görsel 3",
+    "description": "Sahte veridir. Kulüp çalışmalarından bir kare için yer tutucu.",
+    "imagePath": "gallery/g03/20261001T100003Z_0000000000000003.jpg",
+    "displayOrder": 3,
+    "isDeleted": false,
+    "createdAt": "2026-10-01T10:00:00Z",
+    "updatedAt": "2026-10-01T10:00:00Z"
+  },
+  {
+    "id": "g04",
+    "title": "Örnek Görsel 4",
+    "description": "Sahte veridir. Kulüp çalışmalarından bir kare için yer tutucu.",
+    "imagePath": "gallery/g04/20261001T100004Z_0000000000000004.jpg",
+    "displayOrder": 4,
+    "isDeleted": false,
+    "createdAt": "2026-10-01T10:00:00Z",
+    "updatedAt": "2026-10-01T10:00:00Z"
+  },
+  {
+    "id": "g05",
+    "title": "Örnek Görsel 5",
+    "description": "Sahte veridir. Kulüp çalışmalarından bir kare için yer tutucu.",
+    "imagePath": "gallery/g05/20261001T100005Z_0000000000000005.jpg",
+    "displayOrder": 5,
+    "isDeleted": false,
+    "createdAt": "2026-10-01T10:00:00Z",
+    "updatedAt": "2026-10-01T10:00:00Z"
+  },
+  {
+    "id": "g06",
+    "title": "Örnek Görsel 6",
+    "description": "Sahte veridir. Kulüp çalışmalarından bir kare için yer tutucu.",
+    "imagePath": "gallery/g06/20261001T100006Z_0000000000000006.jpg",
+    "displayOrder": 6,
+    "isDeleted": false,
+    "createdAt": "2026-10-01T10:00:00Z",
+    "updatedAt": "2026-10-01T10:00:00Z"
+  }
+]

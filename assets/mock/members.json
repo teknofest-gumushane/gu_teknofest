@@ -1,0 +1,68 @@
+[
+  {
+    "id": "m01",
+    "name": "Örnek Üye 1",
+    "title": "Kulüp Başkanı",
+    "description": "Örnek Bölüm, 1. sınıf",
+    "displayOrder": 1,
+    "isActive": true,
+    "isDeleted": false,
+    "createdAt": "2026-09-01T09:00:00Z",
+    "updatedAt": "2026-10-01T09:00:00Z"
+  },
+  {
+    "id": "m02",
+    "name": "Örnek Üye 2",
+    "title": "Başkan Yardımcısı",
+    "description": "Örnek Bölüm, 2. sınıf",
+    "displayOrder": 2,
+    "isActive": true,
+    "isDeleted": false,
+    "createdAt": "2026-09-01T09:00:00Z",
+    "updatedAt": "2026-10-01T09:00:00Z"
+  },
+  {
+    "id": "m03",
+    "name": "Örnek Üye 3",
+    "title": "Yazılım Koordinatörü",
+    "description": "Örnek Bölüm, 3. sınıf",
+    "displayOrder": 3,
+    "isActive": true,
+    "isDeleted": false,
+    "createdAt": "2026-09-01T09:00:00Z",
+    "updatedAt": "2026-10-01T09:00:00Z"
+  },
+  {
+    "id": "m04",
+    "name": "Örnek Üye 4",
+    "title": "Elektronik Koordinatörü",
+    "description": "Örnek Bölüm, 4. sınıf",
+    "displayOrder": 4,
+    "isActive": true,
+    "isDeleted": false,
+    "createdAt": "2026-09-01T09:00:00Z",
+    "updatedAt": "2026-10-01T09:00:00Z"
+  },
+  {
+    "id": "m05",
+    "name": "Örnek Üye 5",
+    "title": "Etkinlik Sorumlusu",
+    "description": "Örnek Bölüm, 1. sınıf",
+    "displayOrder": 5,
+    "isActive": true,
+    "isDeleted": false,
+    "createdAt": "2026-09-01T09:00:00Z",
+    "updatedAt": "2026-10-01T09:00:00Z"
+  },
+  {
+    "id": "m06",
+    "name": "Örnek Üye 6",
+    "title": "Sosyal Medya Sorumlusu",
+    "description": "Örnek Bölüm, 2. sınıf",
+    "displayOrder": 6,
+    "isActive": false,
+    "isDeleted": false,
+    "createdAt": "2026-09-01T09:00:00Z",
+    "updatedAt": "2026-10-01T09:00:00Z"
+  }
+]

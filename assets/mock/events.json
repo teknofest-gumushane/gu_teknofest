@@ -1,0 +1,53 @@
+[
+  {
+    "id": "e01",
+    "name": "Örnek Etkinlik: Tanışma Toplantısı",
+    "description": "Sahte veridir. Yeni dönem planlarının ve proje fikirlerinin konuşulacağı tanışma buluşması.",
+    "eventTime": "2027-02-18T13:00:00Z",
+    "location": "Gümüşhane Üniversitesi",
+    "place": "Örnek Toplantı Salonu",
+    "images": [],
+    "isDeleted": false,
+    "createdAt": "2026-11-01T09:00:00Z",
+    "updatedAt": "2026-11-01T09:00:00Z"
+  },
+  {
+    "id": "e02",
+    "name": "Örnek Etkinlik: Proje Yazma Atölyesi",
+    "description": "Sahte veridir. Başvuru süreçleri ve proje metni yazımı üzerine uygulamalı atölye.",
+    "eventTime": "2026-10-22T11:00:00Z",
+    "location": "Gümüşhane Üniversitesi",
+    "place": "Örnek Konferans Salonu",
+    "images": [
+      { "path": "events/e02/20261022T120000Z_00000000000000a1.jpg", "title": "Örnek Görsel 1" },
+      { "path": "events/e02/20261022T120500Z_00000000000000a2.jpg", "title": "Örnek Görsel 2" }
+    ],
+    "isDeleted": false,
+    "createdAt": "2026-10-10T09:00:00Z",
+    "updatedAt": "2026-10-23T09:00:00Z"
+  },
+  {
+    "id": "e03",
+    "name": "Örnek Etkinlik: Teknik Gezi",
+    "description": "Sahte veridir. Girişimcilik ekosistemini tanımak için yapılan saha ziyareti.",
+    "eventTime": "2026-09-30T07:00:00Z",
+    "location": "Örnek Teknopark",
+    "place": "",
+    "images": [],
+    "isDeleted": false,
+    "createdAt": "2026-09-15T09:00:00Z",
+    "updatedAt": "2026-10-01T09:00:00Z"
+  },
+  {
+    "id": "e04",
+    "name": "Örnek Etkinlik: Yarışma Bilgilendirme Sunumu",
+    "description": "Sahte veridir. Yarışma kategorilerinin ve takvimin anlatıldığı çevrim içi sunum.",
+    "eventTime": "2026-09-12T17:00:00Z",
+    "location": "Çevrim içi",
+    "place": "",
+    "images": [],
+    "isDeleted": false,
+    "createdAt": "2026-09-01T09:00:00Z",
+    "updatedAt": "2026-09-13T09:00:00Z"
+  }
+]

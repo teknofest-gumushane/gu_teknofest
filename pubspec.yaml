@@ -77,4 +77,7 @@ flutter:
   uses-material-design: true
   generate: true # gen-l10n: l10n.yaml ve lib/l10n/app_tr.arb eklenince çalışır
 
-  # assets: ve fonts: (Inter) ilgili klasörler oluşturulunca buraya eklenecek.
+  assets:
+    - assets/mock/ # sahte veri (ENV=mock); arayüz fazı
+
+  # fonts: (Inter) ve diğer asset klasörleri oluşturulunca buraya eklenecek.
