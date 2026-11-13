@@ -1,4 +1,3 @@
-import 'package:flutter/material.dart';
 import 'package:gu_teknofest/features/landing/view/landing_section_id.dart';
 import 'package:gu_teknofest/product/extension/build_context_l10n_x.dart';
 import 'package:gu_teknofest/product/extension/build_context_responsive_x.dart';
@@ -13,6 +12,7 @@ import 'package:gu_teknofest/product/theme/tf_spacing.dart';
 import 'package:gu_teknofest/product/widget/tf_button.dart';
 import 'package:gu_teknofest/product/widget/tf_logo.dart';
 import 'package:gu_teknofest/product/widget/tf_max_width_box.dart';
+import 'package:material_ui/material_ui.dart';
 
 /// Genel sayfanın yapışkan üst barı: logo ve marka adı, masaüstünde bölüm
 /// linkleri ve "Takıma Katıl" butonu, dar ekranda menü butonu. Sayfa

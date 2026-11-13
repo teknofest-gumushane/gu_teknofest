@@ -8,7 +8,7 @@ Kararlar: [`decisions.md`](decisions.md).
 
 1. Sürüm elle yazılmaz: `flutter pub add <paket>` (dev için `dev:<paket>`). Sonra satır `pubspec.yaml`'da
    uygun kategoriye taşınır ve yanına amacı yazılır.
-2. Sürümü sabitlemek ya da aşağı çekmek için gerekçe yazılır (örnek: D-21).
+2. Sürümü sabitlemek ya da aşağı çekmek için gerekçe yazılır (örnek: aşağıdaki `equatable` satırı).
 3. İşin ortasında yükseltme yapılmaz; güvenlik düzeltmeleri hariç.
 4. Paket eklemek = aynı commit'te bu tabloya satır.
 
@@ -21,6 +21,7 @@ Kararlar: [`decisions.md`](decisions.md).
 | `equatable` (^2.1.0) | State eşitliği. 3.x değil: Firebase test paketleri ^2 ister | arayüz |
 | `get_it` | DI (D-06) | arayüz |
 | `go_router` | Yönlendirme (D-07) | arayüz |
+| `material_ui` | Material bileşenleri (`MaterialApp`, tema, `Icons`…); Flutter 3.50'de çekirdekten bu pakete taşındı (D-32) | arayüz |
 | `flutter_svg` | Hazır `IconData`'sı olmayan ikonlar ve logo (D-11) | arayüz |
 | `url_launcher` | Sosyal medya ve e-posta bağlantıları | arayüz |
 | `image_picker` | Admin panelinde görsel seçme (D-15) | arayüz |
@@ -43,10 +44,9 @@ Bu üç Firebase paketi arayüz fazında yalnızca derleme için bağımlılıkt
 |---|---|---|
 | `build_runner` | kök, `tf_data` | Üreticileri çalıştırır |
 | `riverpod_generator` | kök | `@riverpod` → `*.g.dart` |
-| `go_router_builder` | kök | Typed rotalar → `*.g.dart` |
+| `go_router_builder` (^4.5.3) | kök | Typed rotalar → `*.g.dart`. 4.5.2 altı `source_helper` 1.4 ile derlenmez (D-21) |
 | `json_serializable` | `tf_data` | Modellerin `fromJson` / `toJson` kodu |
 | `very_good_analysis` | kök, `tf_data` | Lint (D-08) |
-| `source_helper` (`<1.4.0`) | kök, `tf_data` | Sabitleme (D-21) |
 | `fake_cloud_firestore`, `firebase_auth_mocks`, `firebase_storage_mocks` | `tf_data` | Servis testleri |
 
 ## Bilinçli olarak yok

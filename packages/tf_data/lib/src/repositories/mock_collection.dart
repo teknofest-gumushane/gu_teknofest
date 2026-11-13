@@ -6,17 +6,16 @@ import 'package:tf_data/src/repositories/mock_data_source.dart';
 
 /// Bir kaydın kimlik ve ortak alanlarını değiştiren kopyalayıcı; modellerin
 /// `copyWith` yöntemine bağlanır.
-typedef MockStamp<T> =
-    T Function(
-      T item, {
-      String? id,
-      DateTime? createdAt,
-      DateTime? updatedAt,
-      bool? isDeleted,
-      DateTime? deletedAt,
-      String? deletedBy,
-      bool clearDeletion,
-    });
+typedef MockStamp<T> = T Function(
+  T item, {
+  String? id,
+  DateTime? createdAt,
+  DateTime? updatedAt,
+  bool? isDeleted,
+  DateTime? deletedAt,
+  String? deletedBy,
+  bool clearDeletion,
+});
 
 /// Bellekte koleksiyon: ilk erişimde sahte veri dosyasından yüklenir; yazmalar
 /// oturum boyunca bellekte kalır (sayfa yenilenince sıfırlanır).

@@ -127,7 +127,7 @@ abstract final class RepositoryHelpers {
   /// arasındakiler) `*` olur (`clubs/abc/events/x` → `clubs/*/events/*`).
   static String collectionPattern(String path) => [
     for (final (index, segment) in path.split(_pathSeparator).indexed)
-      index.isOdd ? '*' : segment,
+      if (index.isOdd) '*' else segment,
   ].join(_pathSeparator);
 
   /// Tekil okuma sonucunu modele çevirir: belge yoksa başarı `null`.

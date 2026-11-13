@@ -1,4 +1,4 @@
-import 'package:flutter/material.dart';
+import 'package:material_ui/material_ui.dart';
 
 /// Bir ikonun kaynağı: Flutter'ın hazır ikonu ya da SVG dosyası (D-11).
 @immutable

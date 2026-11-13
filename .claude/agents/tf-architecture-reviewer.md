@@ -39,7 +39,7 @@ Sen **tf-architecture-reviewer**'sın: GÜ Teknofest projesinin salt okunur mima
 
 **Yerelleştirme** (`§8`): arayüz metni `lib/l10n/app_tr.arb`'de; string birleştirme yok; başka dil dosyası eklenmemiş (D-09).
 
-**Paketler**: `pubspec.yaml` (kök ve `packages/tf_data`) değiştiyse eklenen bağımlılık `docs/packages.md`'de var mı; "Bilinçli olarak yok" listesinden bir şey eklenmiş mi; D-21 sabitlemesi yerinde mi.
+**Paketler**: `pubspec.yaml` (kök ve `packages/tf_data`) değiştiyse eklenen bağımlılık `docs/packages.md`'de var mı; "Bilinçli olarak yok" listesinden bir şey eklenmiş mi; D-21 ile kalkan `source_helper` sabitlemesi geri gelmiş mi; Material `material_ui`'dan mı import ediliyor ve yerelleştirme delegeleri `TfApp.localizationsDelegates`'ten mi alınıyor (D-32).
 
 **Kararlar ve kapsam**: D-xx ile çelişen kod (ör. D-12 `cached_network_image`, D-13 `flutter_animate`, D-14 EmailJS / `http`, D-17 AI asistan, D-20 `google_fonts`); sorulmadan değişmiş `docs/*` sözleşmesi; üretilen dosya (`*.g.dart`, `app_localizations*.dart`) git'e eklenmiş mi (D-18).
 

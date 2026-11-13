@@ -1,12 +1,13 @@
 import 'dart:io';
 
-import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:go_router/go_router.dart';
+import 'package:gu_teknofest/core/bootstrap/tf_app.dart';
 import 'package:gu_teknofest/core/di/project_dependency.dart';
 import 'package:gu_teknofest/l10n/app_localizations.dart';
 import 'package:gu_teknofest/product/theme/tf_theme.dart';
+import 'package:material_ui/material_ui.dart';
 
 import 'tf_test_sizes.dart';
 
@@ -46,7 +47,7 @@ extension PumpApp on WidgetTester {
           theme: TfTheme.light(),
           locale: AppLocalizations.supportedLocales.first,
           supportedLocales: AppLocalizations.supportedLocales,
-          localizationsDelegates: AppLocalizations.localizationsDelegates,
+          localizationsDelegates: TfApp.localizationsDelegates,
           home: child,
         ),
       ),
@@ -67,7 +68,7 @@ extension PumpApp on WidgetTester {
           theme: TfTheme.light(),
           locale: AppLocalizations.supportedLocales.first,
           supportedLocales: AppLocalizations.supportedLocales,
-          localizationsDelegates: AppLocalizations.localizationsDelegates,
+          localizationsDelegates: TfApp.localizationsDelegates,
         ),
       ),
     );

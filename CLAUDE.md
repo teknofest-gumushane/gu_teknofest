@@ -56,8 +56,10 @@ Feature'lar yüz bazlıdır (D-03): `landing` (genel sayfa), `auth` (admin giri�
 - Firebase SDK yalnızca `tf_data` içinden import edilir. Paket dışından `package:tf_data/src/…` yasak;
   yalnızca `package:tf_data/tf_data.dart`.
 - Göreli import yok; her zaman `package:` yolu.
+- Material bileşenleri `package:material_ui/material_ui.dart`'tan import edilir. `package:flutter/material.dart`
+  Flutter 3.50'de kullanımdan kalktı; analyzer reddeder (D-32).
 
-Bu kuralları `tool/check_boundaries.sh` denetler.
+Bu kuralları `tool/check_boundaries.sh` denetler; Material import'unu analyzer yakalar.
 
 İsimlendirme: `*_view_model.dart`, `*_state.dart`, `*_view.dart`, `*_section.dart`, `*_mixin.dart`,
 `*_model.dart`, `*_repository.dart`, `*_service.dart`. Sınıflar `XViewModel`, `XState`, `XView`, `XModel`.

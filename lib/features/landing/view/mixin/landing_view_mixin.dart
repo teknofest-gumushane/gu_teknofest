@@ -1,4 +1,3 @@
-import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:gu_teknofest/features/landing/view/landing_section_id.dart';
 import 'package:gu_teknofest/features/landing/view/landing_view.dart';
@@ -6,6 +5,7 @@ import 'package:gu_teknofest/product/extension/build_context_l10n_x.dart';
 import 'package:gu_teknofest/product/extension/build_context_x.dart';
 import 'package:gu_teknofest/product/theme/tf_motion.dart';
 import 'package:gu_teknofest/product/theme/tf_sizes.dart';
+import 'package:material_ui/material_ui.dart';
 
 /// [LandingView]'in davranışı: kaydırma, bölüm anahtarları, üst barın
 /// küçülmesi ve çekmece menü.

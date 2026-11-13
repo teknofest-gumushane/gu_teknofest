@@ -71,7 +71,7 @@ duracak. Özellik ve düzen olarak [mauteknofest.com](https://mauteknofest.com) 
 
 | Ne | Neden | Not |
 |---|---|---|
-| Flutter **3.44.9** (Dart 3.12) | Projeyi derler | Sürüm aynı olmalı; CI de bunu kullanır |
+| Flutter **3.50.0** (Dart 3.14) | Projeyi derler | Sürüm aynı olmalı; CI de bunu kullanır. Daha eski sürümle derlenmez (D-32) |
 | git | Sürüm kontrolü | |
 | Chrome | Siteyi çalıştırır | |
 | GitHub hesabı | Depoya erişim | `teknofest-gumushane` organizasyonuna eklenmiş olmalısın |

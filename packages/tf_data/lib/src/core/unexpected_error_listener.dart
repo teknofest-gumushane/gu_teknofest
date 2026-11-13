@@ -8,5 +8,8 @@
 /// [reason] kişisel veri içermez: hata kodu ve maskelenmiş koleksiyon kalıbı
 /// (`firestore:parse:clubs/*/events/*`). Dinleyici fırlatmamalıdır; çağıran
 /// yine de sarar.
-typedef UnexpectedErrorListener =
-    void Function(Object error, StackTrace stack, String reason);
+typedef UnexpectedErrorListener = void Function(
+  Object error,
+  StackTrace stack,
+  String reason,
+);

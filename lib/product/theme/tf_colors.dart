@@ -1,4 +1,4 @@
-import 'package:flutter/material.dart';
+import 'package:material_ui/material_ui.dart';
 
 /// Renk token'ları (`docs/token-map.md`). Ekran kodu `context.tf.colors.*` ile
 /// erişir; renk değeri yalnızca bu dosyada yazılır.

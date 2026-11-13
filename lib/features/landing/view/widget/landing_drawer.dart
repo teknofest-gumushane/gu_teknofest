@@ -1,4 +1,3 @@
-import 'package:flutter/material.dart';
 import 'package:gu_teknofest/features/landing/view/landing_section_id.dart';
 import 'package:gu_teknofest/product/extension/build_context_l10n_x.dart';
 import 'package:gu_teknofest/product/extension/build_context_x.dart';
@@ -7,6 +6,7 @@ import 'package:gu_teknofest/product/icon/tf_icons.dart';
 import 'package:gu_teknofest/product/theme/tf_sizes.dart';
 import 'package:gu_teknofest/product/theme/tf_spacing.dart';
 import 'package:gu_teknofest/product/widget/tf_button.dart';
+import 'package:material_ui/material_ui.dart';
 
 /// Dar ekranlardaki çekmece menü: bölüm linkleri ve "Takıma Katıl" butonu.
 class LandingDrawer extends StatelessWidget {

@@ -161,7 +161,7 @@ o klona yazılır. Kurulan `pre-commit`, Dart/ARB/rules/pubspec ya da `tool/` de
 ### `test/run.sh`
 
 ```bash
-bash tool/test/run.sh            # 43 kontrol
+bash tool/test/run.sh            # 47 kontrol
 bash tool/test/run.sh --verbose  # denetim çıktılarıyla
 ```
 
@@ -202,7 +202,7 @@ echo '{"tool_input":{"file_path":"lib/main.dart"}}' | bash tool/hooks/post_edit.
 ```yaml
 - uses: subosito/flutter-action@v2
   with:
-    flutter-version: 3.44.9
+    flutter-version: 3.50.0
     channel: stable
     cache: true
 - run: bash tool/quality_gate.sh --check-format

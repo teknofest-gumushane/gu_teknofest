@@ -1,4 +1,3 @@
-import 'package:flutter/material.dart';
 import 'package:gu_teknofest/product/extension/build_context_l10n_x.dart';
 import 'package:gu_teknofest/product/extension/build_context_x.dart';
 import 'package:gu_teknofest/product/navigation/routes/app_routes.dart';
@@ -7,6 +6,7 @@ import 'package:gu_teknofest/product/theme/tf_spacing.dart';
 import 'package:gu_teknofest/product/widget/tf_button.dart';
 import 'package:gu_teknofest/product/widget/tf_logo.dart';
 import 'package:gu_teknofest/product/widget/tf_max_width_box.dart';
+import 'package:material_ui/material_ui.dart';
 
 /// Bilinmeyen adreslerde gösterilen sayfa.
 class NotFoundView extends StatelessWidget {

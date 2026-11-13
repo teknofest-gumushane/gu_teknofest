@@ -1,4 +1,4 @@
-import 'package:flutter/material.dart';
+import 'package:material_ui/material_ui.dart';
 
 abstract final class TfColors {
   static const Color purple = Color(0xFF682D8B);

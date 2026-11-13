@@ -1,4 +1,3 @@
-import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:gu_teknofest/features/landing/view/landing_section_id.dart';
 import 'package:gu_teknofest/features/landing/view/mixin/landing_view_mixin.dart';
@@ -13,6 +12,7 @@ import 'package:gu_teknofest/features/landing/view/widget/landing_drawer.dart';
 import 'package:gu_teknofest/features/landing/view/widget/landing_footer.dart';
 import 'package:gu_teknofest/features/landing/view/widget/landing_header.dart';
 import 'package:gu_teknofest/product/extension/build_context_responsive_x.dart';
+import 'package:material_ui/material_ui.dart';
 
 /// Genel sayfa: yapışkan üst bar, alt alta bölümler ve alt bilgi. Tek
 /// sayfadır; menü ilgili bölüme kaydırır.

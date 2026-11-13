@@ -1,7 +1,7 @@
-import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:gu_teknofest/product/icon/tf_icons.dart';
 import 'package:gu_teknofest/product/theme/tf_sizes.dart';
+import 'package:material_ui/material_ui.dart';
 
 /// [TfIcons] kayıt defterindeki bir ikonu çizer.
 class TfIcon extends StatelessWidget {

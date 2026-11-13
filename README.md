@@ -8,7 +8,7 @@ yer tutucusuyla durur ve ekip tarafından tek tek yazılacaktır.
 
 ## Hızlı başlangıç
 
-Gerekenler: Flutter 3.44.9 (Dart 3.12), git, Chrome.
+Gerekenler: Flutter 3.50.0 (Dart 3.14), git, Chrome.
 
 ```bash
 bash tool/setup.sh

@@ -21,7 +21,7 @@ if [ "$TF_HELP" = 1 ]; then sed -n '2,14p' "$0" | sed 's/^# \{0,1\}//'; exit 0; 
 
 DATA="tf_data"
 if [ "$TF_LIST" = 1 ]; then
-  printf 'B03\t%s\n' "$DATA kaynağı Flutter arayüz kütüphanesi import edemez (material/widgets/cupertino…)"
+  printf 'B03\t%s\n' "$DATA kaynağı Flutter arayüz kütüphanesi import edemez (flutter/widgets…, material_ui, cupertino_ui)"
   printf 'B04\t%s\n' "lib/features ve lib/product Firebase SDK'sını doğrudan import edemez (yalnızca $DATA üzerinden)"
   printf 'B05\t%s\n' "Bir feature başka bir feature'ı import edemez"
   printf 'B06\t%s\n' "$DATA pubspec'inde arayüz/rota/state paketi olamaz"
@@ -32,9 +32,10 @@ if [ "$TF_LIST" = 1 ]; then
 fi
 
 APP="$(sed -n 's/^name: *\([A-Za-z0-9_]*\).*/\1/p' pubspec.yaml 2>/dev/null | head -1)"
-FLUTTER_UI='^package:flutter/(material|widgets|cupertino|rendering|painting|gestures|animation)\.dart$'
+# Material ve Cupertino Flutter 3.50'de çekirdekten ayrı paketlere taşındı (D-32): ikisi de sayılır.
+FLUTTER_UI='^package:(flutter/(material|widgets|cupertino|rendering|painting|gestures|animation)\.dart|(material_ui|cupertino_ui)/.*)$'
 FIREBASE='^package:(firebase_|cloud_firestore|cloud_functions)'
-DATA_FORBIDDEN_DEP='^(flutter_svg|cached_network_image|go_router.*|.*riverpod.*|image_picker|flutter_localizations)$'
+DATA_FORBIDDEN_DEP='^(material_ui|cupertino_ui|flutter_svg|cached_network_image|go_router.*|.*riverpod.*|image_picker|flutter_localizations)$'
 
 is_root() {
   case "$1" in

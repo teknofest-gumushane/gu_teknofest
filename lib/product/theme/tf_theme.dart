@@ -1,8 +1,8 @@
-import 'package:flutter/material.dart';
 import 'package:gu_teknofest/product/theme/tf_colors.dart';
 import 'package:gu_teknofest/product/theme/tf_radius.dart';
 import 'package:gu_teknofest/product/theme/tf_sizes.dart';
 import 'package:gu_teknofest/product/theme/tf_typography.dart';
+import 'package:material_ui/material_ui.dart';
 
 /// Uygulama teması: token'ları Flutter'ın `ThemeData`'sına bağlar.
 abstract final class TfTheme {

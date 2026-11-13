@@ -4,7 +4,8 @@ publish_to: 'none'
 version: 1.0.0+1
 
 environment:
-  sdk: ^3.12.2
+  sdk: ^3.14.0
+  flutter: ">=3.50.0" # material_ui Flutter >=3.47 ister; ekip ve CI 3.50.0 kullanır (D-32)
 
 # ─────────────────────────────────────────────────────────────────────────────
 # Paket ekleme kuralı
@@ -42,6 +43,7 @@ dependencies:
     sdk: flutter
 
   # ── Arayüz ─────────────────────────────────────────────────────────────────
+  material_ui: ^1.11.0 # Material bileşenleri; Flutter 3.50'de çekirdekten bu pakete taşındı (D-32)
   flutter_svg: ^2.3.2 # hazır IconData'sı olmayan ikonlar ve logolar (TfIcons)
 
   # ── Platform ───────────────────────────────────────────────────────────────
@@ -65,11 +67,7 @@ dev_dependencies:
   # ── Kod üretimi (bash tool/codegen.sh) ─────────────────────────────────────
   build_runner: ^2.15.1 # üreticileri çalıştırır
   riverpod_generator: ^4.0.10 # @riverpod → *.g.dart
-  go_router_builder: ^4.5.0 # typed rotalar → *.g.dart
-  # Sabitleme (gerekçeli): source_helper 1.4.0, go_router_builder 4.5.0 ile aynı adlı uzantıyı
-  # tanımlıyor ve build_runner derlenmiyor. Düzeltmeyi içeren go_router_builder >=4.5.2 Dart >=3.13
-  # istiyor. Dart 3.13'e geçilince bu satırı sil ve `flutter pub upgrade go_router_builder` çalıştır.
-  source_helper: '>=1.3.13 <1.4.0'
+  go_router_builder: ^4.5.3 # typed rotalar → *.g.dart (4.5.2 altı source_helper 1.4 ile derlenmez)
   # json_serializable kökte yok: modeller packages/tf_data içinde üretilir.
 
   # ── Lint ───────────────────────────────────────────────────────────────────

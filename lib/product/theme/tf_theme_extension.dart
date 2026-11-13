@@ -1,7 +1,7 @@
-import 'package:flutter/material.dart';
 import 'package:gu_teknofest/product/theme/tf_breakpoints.dart';
 import 'package:gu_teknofest/product/theme/tf_colors.dart';
 import 'package:gu_teknofest/product/theme/tf_typography.dart';
+import 'package:material_ui/material_ui.dart';
 
 /// `context.tf` ile erişilen tema kümesi: renkler, yazı stilleri, ekran sınıfı
 /// ve hareket tercihi.

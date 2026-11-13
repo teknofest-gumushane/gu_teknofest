@@ -6,7 +6,7 @@ yapay zekâ ile baştan sona geliştirme adım adım orada. Kuralların tamamı 
 
 ## Kurulum
 
-Gerekenler: Flutter 3.44.9 (Dart 3.12), git, Chrome.
+Gerekenler: Flutter 3.50.0 (Dart 3.14), git, Chrome.
 
 ```bash
 git clone https://github.com/teknofest-gumushane/gu_teknofest.git

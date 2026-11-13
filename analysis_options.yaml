@@ -13,6 +13,7 @@ analyzer:
     - "build/**"
     # Araç öz-testi fixture'ları: kasıtlı ihlal içeren sahte proje ağaçları.
     - "tool/test/fixtures/**"
+    - web/**
 
 linter:
   rules:

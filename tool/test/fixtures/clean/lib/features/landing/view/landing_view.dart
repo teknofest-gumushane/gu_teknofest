@@ -1,6 +1,6 @@
 import 'package:fixture_app/features/landing/provider/projects_view_model.dart';
 import 'package:fixture_app/product/theme/tf_colors.dart';
-import 'package:flutter/material.dart';
+import 'package:material_ui/material_ui.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 /// Yorum içindeki Color(0xFF000000) ve Text('örnek') ihlal sayılmaz.

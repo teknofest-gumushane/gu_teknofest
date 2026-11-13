@@ -46,6 +46,16 @@ expect_violations() {
   done
 }
 
+# expect_detail BETİK KURAL METİN AÇIKLAMA — ihlalli ağaçta KURAL, ayrıntı satırında METİN geçen
+# bir ihlal raporlamalı. Bir kuralın belirli bir durumu yakaladığını sınar: expect_violations
+# yalnızca kural kimliğine bakar ve aynı kimlik başka bir satırdan da gelebilir.
+expect_detail() {
+  local out
+  out="$(bash "$TOOL/$1" --root "$FIX/violating" 2>&1)"
+  if printf '%s\n' "$out" | grep -A1 "\[$2\]" | grep -v "\[$2\]" | grep -Fq "$3"; then ok "$1 $4"
+  else bad "$1 $4 (\"$3\" için $2 ihlali yok)"; fi
+}
+
 # expect_list BETİK — --list her kuralı tek satırda yazar ve 0 ile çıkar.
 expect_list() {
   local out rc
@@ -62,6 +72,10 @@ expect_list check_hardcode.sh
 echo "check_boundaries.sh"
 expect_clean check_boundaries.sh
 expect_violations check_boundaries.sh B03 B04 B05 B06 B07 B08 B09
+expect_detail check_boundaries.sh B03 "package:material_ui/" "B03 material_ui import'unu yakaladı"
+expect_detail check_boundaries.sh B03 "package:cupertino_ui/" "B03 cupertino_ui import'unu yakaladı"
+expect_detail check_boundaries.sh B06 "material_ui" "B06 material_ui bağımlılığını yakaladı"
+expect_detail check_boundaries.sh B06 "cupertino_ui" "B06 cupertino_ui bağımlılığını yakaladı"
 expect_list check_boundaries.sh
 
 echo "check_no_hard_delete.sh"

@@ -1,4 +1,3 @@
-import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:gu_teknofest/features/landing/view/landing_section_id.dart';
 import 'package:gu_teknofest/features/landing/view/landing_view.dart';
@@ -8,6 +7,7 @@ import 'package:gu_teknofest/features/landing/view/widget/landing_header.dart';
 import 'package:gu_teknofest/l10n/app_localizations.dart';
 import 'package:gu_teknofest/product/widget/tf_coming_soon.dart';
 import 'package:gu_teknofest/product/widget/tf_logo.dart';
+import 'package:material_ui/material_ui.dart';
 
 import '../../helpers/pump_app.dart';
 import '../../helpers/tf_test_sizes.dart';
