@@ -7,14 +7,69 @@ body:
     attributes:
       value: |
         Görevi tek bir konuya odakla: bir issue tek bir PR ile kapanabilmeli. Kurallar: [CLAUDE.md](https://github.com/teknofest-gumushane/gu_teknofest/blob/main/CLAUDE.md), akış: [CONTRIBUTING.md](https://github.com/teknofest-gumushane/gu_teknofest/blob/main/CONTRIBUTING.md).
+
+        **Görevi, onu hiç görmemiş biri ya da bir yapay zekâ başka kimseye sormadan yapabilecek kadar ayrıntılı yaz.** Adları koddan doğrula, açık soru bırakma (kararı al ve "Karar" diye yaz), arayüz metinlerini ARB anahtarlarıyla ver. Örnek: [#13](https://github.com/teknofest-gumushane/gu_teknofest/issues/13). Yapay zekâ ile yazıyorsan `tf-issue` skill'ini kullan; gövdenin başına konacak not ve başlık sırası orada.
   - type: textarea
     id: ne
     attributes:
       label: Ne yapılacak?
-      description: Bir iki cümleyle sonuç. "Nasıl" değil "ne".
+      description: İki üç cümleyle sonuç. "Nasıl" değil "ne".
       placeholder: Projeler bölümü, sahte veriden gelen projeleri etiket filtresi ve aramayla kart ızgarasında gösterir.
     validations:
       required: true
+  - type: textarea
+    id: durum
+    attributes:
+      label: Şu anki durum
+      description: Koddaki ilgili dosya, sınıf, alan ve sahte veri. Bugün ne var, ne eksik? Kullanılacak hazır parçalar hangi görevden geliyor?
+      placeholder: |
+        - `lib/features/landing/view/section/projects_section.dart` bugün `TfComingSoon` çiziyor.
+        - Repository: `projectRepository.fetchProjects()` → silinmemiş projeler, `displayOrder`'a göre.
+        - Sahte veri: `assets/mock/projects.json` (4 kayıt, biri silinmiş).
+  - type: textarea
+    id: hedef
+    attributes:
+      label: Hedef davranış
+      description: Numaralı, denetlenebilir kurallar. Verilmiş kararları başta "Karar" diye yaz. Açık soru bırakma.
+      placeholder: |
+        **Karar:** Tamamlanan projeler de listelenir, "Tamamlandı" etiketiyle.
+
+        1. Durum sırası: hata → yükleniyor → boş → dolu.
+        2. Etiket çipleri tek seçimlidir; "Tümü" varsayılan.
+    validations:
+      required: true
+  - type: textarea
+    id: sozlesme
+    attributes:
+      label: Sözleşme (adlar ve imzalar)
+      description: Yazılacak sınıfların imzaları, eklenecek token'lar (değerleriyle) ve ARB anahtarları (Türkçe metinleriyle). Yoksa "Yok".
+      placeholder: |
+        ```dart
+        // lib/features/landing/provider/projects_state.dart
+        final class ProjectsState extends Equatable { … }
+        ```
+
+        | Anahtar | Metin |
+        |---|---|
+        | `projectsEmptyTitle` | Henüz proje eklenmedi. |
+  - type: textarea
+    id: adimlar
+    attributes:
+      label: Uygulama adımları
+      description: Sırayla, dosya yollarıyla. Dikkat edilecek kuralları da yaz.
+      placeholder: |
+        1. ARB anahtarlarını ekle, `bash tool/codegen.sh`.
+        2. `projects_state.dart` ve `projects_view_model.dart` yaz.
+        3. …
+  - type: textarea
+    id: test
+    attributes:
+      label: Test planı
+      description: Test dosyası başına denenecek durumlar ve kurulum (hangi fake, hangi yardımcı).
+      placeholder: |
+        `test/features/landing/section/projects_section_test.dart` (yeni):
+        - Dolu: üç kart, etiket çipleri, arama kutusu.
+        - Hata: mesaj + "Tekrar dene".
   - type: dropdown
     id: alan
     attributes:
@@ -65,11 +120,11 @@ body:
     id: dosyalar
     attributes:
       label: Dokunulacak dosyalar
-      description: Tahmini liste. İki görev aynı dosyaya dokunuyorsa birini diğerine bağla.
+      description: Yeni dosyaları "(yeni)" diye işaretle. İki görev aynı dosyaya dokunuyorsa birini diğerine bağla (D-31'deki ortak dosyalar hariç).
       placeholder: |
-        lib/features/landing/view/section/projects_section.dart
-        lib/features/landing/provider/projects_view_model.dart
-        lib/l10n/app_tr.arb
+        - lib/features/landing/view/section/projects_section.dart
+        - lib/features/landing/provider/projects_view_model.dart (yeni)
+        - lib/l10n/app_tr.arb
   - type: textarea
     id: kapsam-disi
     attributes:
@@ -81,8 +136,11 @@ body:
       label: Referans
       description: docs/analiz.md'deki ilgili başlık ya da karar numarası.
       placeholder: docs/analiz.md §1 "Projeler" · D-12
-  - type: input
+  - type: textarea
     id: bagimlilik
     attributes:
       label: Bağımlı olduğu görevler
-      placeholder: "#12, #15"
+      description: Her biri için görev numarası ve o görevin ne sağladığı. Yoksa "Yok".
+      placeholder: |
+        - #5 → `TfCard`, `TfTag`, `TfResponsiveGrid`
+        - #6 → `TfNetworkImage`

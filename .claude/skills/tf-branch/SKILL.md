@@ -5,7 +5,7 @@ description: Dal açma, adlandırma ve dalı güncel tutma kuralları. Bir issue
 
 # tf-branch
 
-**Her iş kendi dalında yürür** (D-27). `main`'e doğrudan commit yalnızca proje sahibinin açık talimatıyla yapılır (D-19). Akış: issue (`tf-issue`) → **dal** → PR (`tf-pr`).
+**Her iş kendi dalında yürür** (D-27). `main` korumalıdır: proje sahibi ve Claude dahil kimse doğrudan commit ya da push yapamaz (D-36). Akış: issue (`tf-issue`) → **dal** → PR (`tf-pr`).
 
 ## Ad
 

@@ -20,8 +20,9 @@
 3. **Sapma yok.** Kilitli karar (D-xx) ve `docs/*` sözleşmeleri değişmez. Değiştirmek istiyorsan önce sor;
    onaylanırsa `docs/decisions.md`'ye işle (`tf-decision-log`).
 4. **Kapı yeşil değilse commit yok:** `bash tool/quality_gate.sh` (§11).
-5. **Akış: issue → dal → PR** (D-27; `tf-issue`, `tf-branch`, `tf-pr`). `main`'e doğrudan commit yalnızca proje sahibinin
-   açık talimatıyla (D-19). Commit, push, issue ve PR yalnızca kullanıcı isteyince; birleştirmeyi Claude kendiliğinden yapmaz.
+5. **Akış: issue → dal → PR** (D-27; `tf-issue`, `tf-branch`, `tf-pr`). `main` korumalıdır: proje sahibi ve Claude
+   dahil herkes PR açar, yalnızca proje sahibi birleştirir (D-36). Commit, push, issue ve PR yalnızca kullanıcı isteyince;
+   birleştirmeyi Claude kendiliğinden yapmaz.
 6. Kullanıcıya **Türkçe** yaz. Kısa ol: ne yaptın, sonuç, sıradaki adım.
 
 ---
@@ -192,7 +193,7 @@ format → codegen → analyze (`--fatal-infos`) → araç öz-testi → sınır
 Tüm betikler: [`tool/README.md`](tool/README.md).
 
 - Commit ve PR başlığı: Conventional Commits, açıklama Türkçe. Üretilen dosyalar commit edilmez (D-18).
-- Dal adı `<tür>/<issue-no>-<kısa-ad>`; PR `main`'e, şablonla, `Closes #no` ile; birleştirme squash, CI yeşil + bir onay (D-27).
+- Dal adı `<tür>/<issue-no>-<kısa-ad>`; PR `main`'e, şablonla, `Closes #no` ile; birleştirme squash, CI yeşil, yalnızca proje sahibi birleştirir (D-27, D-36).
 - Aynı kapı her push ve PR'da CI'de de çalışır (`.github/workflows/ci.yml`).
 - Kod üreten bir şey değiştiyse (`@riverpod`, rota, model, ARB): `bash tool/codegen.sh`.
 
@@ -202,7 +203,7 @@ Tüm betikler: [`tool/README.md`](tool/README.md).
 ❌ `google_fonts` · ❌ doğrudan `Icons.*` · ❌ listede olmayan paket (önce sor) · ❌ onaysız `firebase deploy` ·
 ❌ kilitli kararı sormadan değiştirme · ❌ kırmızı kapıyla commit · ❌ `--no-verify` · ❌ üretilen dosyayı commit ·
 ❌ onaysız uygulama · ❌ düz metinle seçenekli soru · ❌ referans siteden içerik kopyalama · ❌ `git push --force` ·
-❌ onaysız issue / PR açma ya da birleştirme · ❌ bir PR'da birden çok issue.
+❌ onaysız issue / PR açma ya da birleştirme · ❌ `main`'e doğrudan commit ya da push · ❌ bir PR'da birden çok issue.
 
 ## 13. Dosya haritası
 
