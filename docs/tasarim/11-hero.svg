@@ -1,0 +1,95 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 612" width="1000" height="612" font-family="Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif" role="img" aria-label="#11 Hero bölümü: tasarım taslağı">
+<title>#11 Hero bölümü: tasarım taslağı</title>
+<defs><linearGradient id="hero" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#682D8B"/><stop offset=".5" stop-color="#2F97C1"/><stop offset="1" stop-color="#1B3C73"/></linearGradient></defs>
+<rect width="1000" height="612" fill="#FFFFFF"/>
+<rect x="24" y="20" width="52" height="26" rx="13" fill="#F47A1F"/>
+<text x="50" y="37.5" font-size="12.5" font-weight="700" fill="#FFFFFF" text-anchor="middle">#11</text>
+<text x="88" y="39" font-size="18" font-weight="600" fill="#1B3C73">Hero bölümü</text>
+<text x="976" y="32" font-size="10" fill="#1B3C73" fill-opacity=".7" text-anchor="end">Şematik taslak: yerleşimi ve durumları gösterir.</text>
+<text x="976" y="46" font-size="10" fill="#1B3C73" fill-opacity=".7" text-anchor="end">Ölçü ve renk için token, davranış için issue geçerlidir.</text>
+<line x1="24" y1="58" x2="976" y2="58" stroke="#E2E8F0"/>
+<text x="24" y="77" font-size="10.5" font-weight="400" fill="#1B3C73" fill-opacity="0.75">Masaüstü · 1024 px ve üstü</text>
+<rect x="24" y="86" width="680" height="392" fill="#F8F9FA" rx="10" stroke="#E2E8F0" stroke-width="1"/>
+<clipPath id="k1"><rect x="24" y="86" width="680" height="392" rx="10"/></clipPath><g clip-path="url(#k1)">
+<rect x="24" y="86" width="680" height="30" fill="#682D8B"/>
+<circle cx="44" cy="101" r="9" fill="#FFFFFF"/>
+<text x="60" y="104.5" font-size="9.5" font-weight="600" fill="#FFFFFF">Teknofest Kulübü</text>
+<rect x="612" y="93" width="76" height="16" fill="#2F97C1" rx="8"/>
+<text x="650" y="104" font-size="8" font-weight="600" fill="#FFFFFF" text-anchor="middle">Takıma Katıl</text>
+<text x="600" y="104.5" font-size="8" font-weight="400" fill="#FFFFFF" text-anchor="end" fill-opacity="0.92">Sosyal Medya</text>
+<text x="536.4" y="104.5" font-size="8" font-weight="400" fill="#FFFFFF" text-anchor="end" fill-opacity="0.92">Ekibimiz</text>
+<text x="490" y="104.5" font-size="8" font-weight="400" fill="#FFFFFF" text-anchor="end" fill-opacity="0.92">Galeri</text>
+<text x="452.2" y="104.5" font-size="8" font-weight="400" fill="#FFFFFF" text-anchor="end" fill-opacity="0.92">Etkinlikler</text>
+<text x="392.9" y="104.5" font-size="8" font-weight="400" fill="#FFFFFF" text-anchor="end" fill-opacity="0.92">Projeler</text>
+<text x="346.5" y="104.5" font-size="8" font-weight="400" fill="#FFFFFF" text-anchor="end" fill-opacity="0.92">Hakkımızda</text>
+<rect x="24" y="116" width="680" height="362" fill="url(#hero)"/>
+<text x="60" y="164" font-size="8.5" font-weight="600" fill="#FFFFFF" fill-opacity="0.8" letter-spacing="1.4">GÜMÜŞHANE ÜNİVERSİTESİ</text>
+<text x="60" y="200" font-size="30" font-weight="600" fill="#FFFFFF">Teknofest Kulübü</text>
+<text x="60" y="222" font-size="11" font-weight="400" fill="#FFFFFF" fill-opacity="0.85">Teknoloji üretmek isteyen öğrencilerin buluştuğu, birlikte öğrenip birlikte geliştirdiği kulüp.</text>
+<rect x="60" y="240" width="104.4" height="26" fill="#2F97C1" rx="13"/>
+<text x="112.2" y="256.6" font-size="10" font-weight="600" fill="#FFFFFF" text-anchor="middle">Takıma Katıl</text>
+<rect x="174.4" y="240" width="129.2" height="26" fill="none" rx="13" stroke="#FFFFFF" stroke-width="1.2"/>
+<text x="239" y="256.6" font-size="10" font-weight="600" fill="#FFFFFF" text-anchor="middle">Projeleri İncele</text>
+<circle cx="319.6" cy="253" r="8" fill="#F47A1F" stroke="#FFFFFF" stroke-width="1.5"/>
+<text x="319.6" y="256.2" font-size="9" font-weight="700" fill="#FFFFFF" text-anchor="middle">1</text>
+<rect x="60" y="292" width="520" height="120" fill="#FFFFFF" rx="10" stroke="#FFFFFF" stroke-width="1" fill-opacity="0.1" stroke-opacity="0.3"/>
+<rect x="510" y="306" width="54" height="18" fill="#F47A1F" rx="9"/>
+<text x="537" y="318.5" font-size="9" font-weight="600" fill="#FFFFFF" text-anchor="middle">Güncel</text>
+<text x="84" y="364" font-size="22" font-weight="600" fill="#FFFFFF">48</text>
+<text x="84" y="384" font-size="9.5" font-weight="400" fill="#FFFFFF" fill-opacity="0.8">Üye</text>
+<text x="208" y="364" font-size="22" font-weight="600" fill="#FFFFFF">21</text>
+<text x="208" y="384" font-size="9.5" font-weight="400" fill="#FFFFFF" fill-opacity="0.8">Aktif üye</text>
+<text x="332" y="364" font-size="22" font-weight="600" fill="#FFFFFF">3</text>
+<text x="332" y="384" font-size="9.5" font-weight="400" fill="#FFFFFF" fill-opacity="0.8">Proje</text>
+<text x="456" y="364" font-size="22" font-weight="600" fill="#FFFFFF">Açık</text>
+<text x="456" y="384" font-size="9.5" font-weight="400" fill="#FFFFFF" fill-opacity="0.8">Başvurular</text>
+<circle cx="596" cy="306" r="8" fill="#F47A1F" stroke="#FFFFFF" stroke-width="1.5"/>
+<text x="596" y="309.2" font-size="9" font-weight="700" fill="#FFFFFF" text-anchor="middle">2</text>
+<circle cx="596" cy="392" r="8" fill="#F47A1F" stroke="#FFFFFF" stroke-width="1.5"/>
+<text x="596" y="395.2" font-size="9" font-weight="700" fill="#FFFFFF" text-anchor="middle">3</text>
+</g>
+<text x="736" y="77" font-size="10.5" font-weight="400" fill="#1B3C73" fill-opacity="0.75">Telefon · 640 px altı</text>
+<rect x="736" y="86" width="240" height="392" fill="#F8F9FA" rx="10" stroke="#E2E8F0" stroke-width="1"/>
+<clipPath id="k2"><rect x="736" y="86" width="240" height="392" rx="10"/></clipPath><g clip-path="url(#k2)">
+<rect x="736" y="86" width="240" height="30" fill="#682D8B"/>
+<circle cx="756" cy="101" r="9" fill="#FFFFFF"/>
+<text x="772" y="104.5" font-size="9.5" font-weight="600" fill="#FFFFFF">Teknofest Kulübü</text>
+<circle cx="956" cy="101" r="9" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="0.8" fill-opacity="0.14" stroke-opacity="0.5"/>
+<line x1="952" y1="98" x2="960" y2="98" stroke="#FFFFFF" stroke-width="1.1" stroke-linecap="round"/>
+<line x1="952" y1="101" x2="960" y2="101" stroke="#FFFFFF" stroke-width="1.1" stroke-linecap="round"/>
+<line x1="952" y1="104" x2="960" y2="104" stroke="#FFFFFF" stroke-width="1.1" stroke-linecap="round"/>
+<rect x="736" y="116" width="240" height="362" fill="url(#hero)"/>
+<text x="750" y="150" font-size="7.5" font-weight="600" fill="#FFFFFF" fill-opacity="0.8" letter-spacing="1.2">GÜMÜŞHANE ÜNİVERSİTESİ</text>
+<text x="750" y="176" font-size="21" font-weight="600" fill="#FFFFFF">Teknofest Kulübü</text>
+<text x="750" y="194" font-size="9.5" font-weight="400" fill="#FFFFFF" fill-opacity="0.85">Teknoloji üretmek isteyen öğrencilerin</text>
+<text x="750" y="207" font-size="9.5" font-weight="400" fill="#FFFFFF" fill-opacity="0.85">buluştuğu kulüp.</text>
+<rect x="750" y="220" width="212" height="26" fill="#2F97C1" rx="13"/>
+<text x="856" y="236.6" font-size="10" font-weight="600" fill="#FFFFFF" text-anchor="middle">Takıma Katıl</text>
+<rect x="750" y="252" width="212" height="26" fill="none" rx="13" stroke="#FFFFFF" stroke-width="1.2"/>
+<text x="856" y="268.6" font-size="10" font-weight="600" fill="#FFFFFF" text-anchor="middle">Projeleri İncele</text>
+<rect x="750" y="292" width="212" height="158" fill="#FFFFFF" rx="10" stroke="#FFFFFF" stroke-width="1" fill-opacity="0.1" stroke-opacity="0.3"/>
+<rect x="896" y="304" width="54" height="18" fill="#F47A1F" rx="9"/>
+<text x="923" y="316.5" font-size="9" font-weight="600" fill="#FFFFFF" text-anchor="middle">Güncel</text>
+<text x="766" y="360" font-size="19" font-weight="600" fill="#FFFFFF">48</text>
+<text x="766" y="376" font-size="9" font-weight="400" fill="#FFFFFF" fill-opacity="0.8">Üye</text>
+<text x="866" y="360" font-size="19" font-weight="600" fill="#FFFFFF">21</text>
+<text x="866" y="376" font-size="9" font-weight="400" fill="#FFFFFF" fill-opacity="0.8">Aktif üye</text>
+<text x="766" y="412" font-size="19" font-weight="600" fill="#FFFFFF">3</text>
+<text x="766" y="428" font-size="9" font-weight="400" fill="#FFFFFF" fill-opacity="0.8">Proje</text>
+<text x="866" y="412" font-size="19" font-weight="600" fill="#FFFFFF">Açık</text>
+<text x="866" y="428" font-size="9" font-weight="400" fill="#FFFFFF" fill-opacity="0.8">Başvurular</text>
+</g>
+<text x="24" y="512" font-size="11.5" font-weight="600" fill="#1B3C73">Notlar</text>
+<circle cx="32" cy="528.4" r="8" fill="#F47A1F"/>
+<text x="32" y="531.6" font-size="9" font-weight="700" fill="#FFFFFF" text-anchor="middle">1</text>
+<text x="48" y="532" font-size="10.5" font-weight="400" fill="#0F172A">&quot;Takıma Katıl&quot; başvuru formunu açar (onJoin); &quot;Projeleri İncele&quot; sayfayı Projeler bölümüne kaydırır.</text>
+<circle cx="32" cy="547.4" r="8" fill="#F47A1F"/>
+<text x="32" y="550.6" font-size="9" font-weight="700" fill="#FFFFFF" text-anchor="middle">2</text>
+<text x="48" y="551" font-size="10.5" font-weight="400" fill="#0F172A">İstatistik kartı butonların altındadır: 640 px ve üstünde dört değer yan yana, altında 2 × 2. &quot;Güncel&quot; sabit metindir.</text>
+<circle cx="32" cy="566.4" r="8" fill="#F47A1F"/>
+<text x="32" y="569.6" font-size="9" font-weight="700" fill="#FFFFFF" text-anchor="middle">3</text>
+<text x="48" y="570" font-size="10.5" font-weight="400" fill="#0F172A">Kartın durum sırası: hata (tekrar dene), yükleniyor, dolu. Başlık ve butonlar her durumda görünür kalır.</text>
+<circle cx="32" cy="585.4" r="8" fill="#F47A1F"/>
+<text x="32" y="588.6" font-size="9" font-weight="700" fill="#FFFFFF" text-anchor="middle">4</text>
+<text x="48" y="589" font-size="10.5" font-weight="400" fill="#0F172A">Bulanıklık yok: kart &quot;glass&quot; rengi ve ince açık kenarlıkla çizilir (D-33). Sayılar Türkçe biçimlenir (1.250).</text>
+</svg>

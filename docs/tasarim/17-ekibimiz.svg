@@ -1,0 +1,122 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 716" width="1000" height="716" font-family="Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif" role="img" aria-label="#17 Ekibimiz bölümü: tasarım taslağı">
+<title>#17 Ekibimiz bölümü: tasarım taslağı</title>
+<defs><linearGradient id="hero" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#682D8B"/><stop offset=".5" stop-color="#2F97C1"/><stop offset="1" stop-color="#1B3C73"/></linearGradient></defs>
+<rect width="1000" height="716" fill="#FFFFFF"/>
+<rect x="24" y="20" width="52" height="26" rx="13" fill="#F47A1F"/>
+<text x="50" y="37.5" font-size="12.5" font-weight="700" fill="#FFFFFF" text-anchor="middle">#17</text>
+<text x="88" y="39" font-size="18" font-weight="600" fill="#1B3C73">Ekibimiz bölümü</text>
+<text x="976" y="32" font-size="10" fill="#1B3C73" fill-opacity=".7" text-anchor="end">Şematik taslak: yerleşimi ve durumları gösterir.</text>
+<text x="976" y="46" font-size="10" fill="#1B3C73" fill-opacity=".7" text-anchor="end">Ölçü ve renk için token, davranış için issue geçerlidir.</text>
+<line x1="24" y1="58" x2="976" y2="58" stroke="#E2E8F0"/>
+<text x="24" y="77" font-size="10.5" font-weight="400" fill="#1B3C73" fill-opacity="0.75">Masaüstü · 1024 px ve üstü</text>
+<rect x="24" y="86" width="680" height="496" fill="#F8F9FA" rx="10" stroke="#E2E8F0" stroke-width="1"/>
+<clipPath id="k1"><rect x="24" y="86" width="680" height="496" rx="10"/></clipPath><g clip-path="url(#k1)">
+<rect x="24" y="86" width="680" height="30" fill="#682D8B"/>
+<circle cx="44" cy="101" r="9" fill="#FFFFFF"/>
+<text x="60" y="104.5" font-size="9.5" font-weight="600" fill="#FFFFFF">Teknofest Kulübü</text>
+<rect x="612" y="93" width="76" height="16" fill="#2F97C1" rx="8"/>
+<text x="650" y="104" font-size="8" font-weight="600" fill="#FFFFFF" text-anchor="middle">Takıma Katıl</text>
+<text x="600" y="104.5" font-size="8" font-weight="400" fill="#FFFFFF" text-anchor="end" fill-opacity="0.92">Sosyal Medya</text>
+<text x="536.4" y="104.5" font-size="8" font-weight="400" fill="#FFFFFF" text-anchor="end" fill-opacity="0.92">Ekibimiz</text>
+<text x="490" y="104.5" font-size="8" font-weight="400" fill="#FFFFFF" text-anchor="end" fill-opacity="0.92">Galeri</text>
+<text x="452.2" y="104.5" font-size="8" font-weight="400" fill="#FFFFFF" text-anchor="end" fill-opacity="0.92">Etkinlikler</text>
+<text x="392.9" y="104.5" font-size="8" font-weight="400" fill="#FFFFFF" text-anchor="end" fill-opacity="0.92">Projeler</text>
+<text x="346.5" y="104.5" font-size="8" font-weight="400" fill="#FFFFFF" text-anchor="end" fill-opacity="0.92">Hakkımızda</text>
+<text x="60" y="150" font-size="8.5" font-weight="600" fill="#F47A1F" letter-spacing="1.4">EKİBİMİZ</text>
+<text x="60" y="175" font-size="18" font-weight="600" fill="#1B3C73">Kulübü yürütenler</text>
+<rect x="62" y="200" width="188" height="150" fill="#2B4F87" rx="12" fill-opacity="0.09"/>
+<rect x="60" y="195" width="192" height="150" fill="#FFFFFF" rx="10" stroke="#2F97C1" stroke-width="1" stroke-opacity="0.2"/>
+<circle cx="156" cy="235" r="24" fill="#2F97C1"/>
+<text x="156" y="239.5" font-size="13" font-weight="600" fill="#FFFFFF" text-anchor="middle">Ö1</text>
+<text x="156" y="281" font-size="11.5" font-weight="600" fill="#1B3C73" text-anchor="middle">Örnek Üye 1</text>
+<text x="156" y="297" font-size="9.5" font-weight="400" fill="#2F97C1" text-anchor="middle">Kulüp Başkanı</text>
+<text x="156" y="313" font-size="9" font-weight="400" fill="#1B3C73" text-anchor="middle" fill-opacity="0.75">Örnek Bölüm, 1. sınıf</text>
+<rect x="270" y="200" width="188" height="150" fill="#2B4F87" rx="12" fill-opacity="0.09"/>
+<rect x="268" y="195" width="192" height="150" fill="#FFFFFF" rx="10" stroke="#2F97C1" stroke-width="1" stroke-opacity="0.2"/>
+<circle cx="364" cy="235" r="24" fill="#2F97C1"/>
+<text x="364" y="239.5" font-size="13" font-weight="600" fill="#FFFFFF" text-anchor="middle">Ö2</text>
+<text x="364" y="281" font-size="11.5" font-weight="600" fill="#1B3C73" text-anchor="middle">Örnek Üye 2</text>
+<text x="364" y="297" font-size="9.5" font-weight="400" fill="#2F97C1" text-anchor="middle">Örnek ünvan</text>
+<text x="364" y="313" font-size="9" font-weight="400" fill="#1B3C73" text-anchor="middle" fill-opacity="0.75">Örnek Bölüm, 2. sınıf</text>
+<rect x="478" y="200" width="188" height="150" fill="#2B4F87" rx="12" fill-opacity="0.09"/>
+<rect x="476" y="195" width="192" height="150" fill="#FFFFFF" rx="10" stroke="#2F97C1" stroke-width="1" stroke-opacity="0.2"/>
+<circle cx="572" cy="235" r="24" fill="#2F97C1"/>
+<text x="572" y="239.5" font-size="13" font-weight="600" fill="#FFFFFF" text-anchor="middle">Ö3</text>
+<text x="572" y="281" font-size="11.5" font-weight="600" fill="#1B3C73" text-anchor="middle">Örnek Üye 3</text>
+<text x="572" y="297" font-size="9.5" font-weight="400" fill="#2F97C1" text-anchor="middle">Örnek ünvan</text>
+<text x="572" y="313" font-size="9" font-weight="400" fill="#1B3C73" text-anchor="middle" fill-opacity="0.75">Örnek Bölüm, 3. sınıf</text>
+<rect x="62" y="366" width="188" height="150" fill="#2B4F87" rx="12" fill-opacity="0.09"/>
+<rect x="60" y="361" width="192" height="150" fill="#FFFFFF" rx="10" stroke="#2F97C1" stroke-width="1" stroke-opacity="0.2"/>
+<circle cx="156" cy="401" r="24" fill="#2F97C1"/>
+<text x="156" y="405.5" font-size="13" font-weight="600" fill="#FFFFFF" text-anchor="middle">Ö4</text>
+<text x="156" y="447" font-size="11.5" font-weight="600" fill="#1B3C73" text-anchor="middle">Örnek Üye 4</text>
+<text x="156" y="463" font-size="9.5" font-weight="400" fill="#2F97C1" text-anchor="middle">Örnek ünvan</text>
+<text x="156" y="479" font-size="9" font-weight="400" fill="#1B3C73" text-anchor="middle" fill-opacity="0.75">Örnek Bölüm, 4. sınıf</text>
+<rect x="270" y="366" width="188" height="150" fill="#2B4F87" rx="12" fill-opacity="0.09"/>
+<rect x="268" y="361" width="192" height="150" fill="#FFFFFF" rx="10" stroke="#2F97C1" stroke-width="1" stroke-opacity="0.2"/>
+<circle cx="364" cy="401" r="24" fill="#2F97C1"/>
+<text x="364" y="405.5" font-size="13" font-weight="600" fill="#FFFFFF" text-anchor="middle">Ö5</text>
+<text x="364" y="447" font-size="11.5" font-weight="600" fill="#1B3C73" text-anchor="middle">Örnek Üye 5</text>
+<text x="364" y="463" font-size="9.5" font-weight="400" fill="#2F97C1" text-anchor="middle">Örnek ünvan</text>
+<text x="364" y="479" font-size="9" font-weight="400" fill="#1B3C73" text-anchor="middle" fill-opacity="0.75">Örnek Bölüm, 5. sınıf</text>
+<circle cx="238" cy="209" r="8" fill="#F47A1F" stroke="#FFFFFF" stroke-width="1.5"/>
+<text x="238" y="212.2" font-size="9" font-weight="700" fill="#FFFFFF" text-anchor="middle">1</text>
+<rect x="60" y="535" width="98.2" height="26" fill="#2F97C1" rx="13"/>
+<text x="109.1" y="551.6" font-size="10" font-weight="600" fill="#FFFFFF" text-anchor="middle">Ekibe Katıl</text>
+<circle cx="172.2" cy="531" r="8" fill="#F47A1F" stroke="#FFFFFF" stroke-width="1.5"/>
+<text x="172.2" y="534.2" font-size="9" font-weight="700" fill="#FFFFFF" text-anchor="middle">2</text>
+<rect x="198.2" y="543" width="14" height="10" fill="none" rx="2" stroke="#2F97C1" stroke-width="1.2"/>
+<line x1="199.7" y1="545" x2="205.2" y2="549" stroke="#2F97C1" stroke-width="1.1" stroke-linecap="round"/>
+<line x1="210.7" y1="545" x2="205.2" y2="549" stroke="#2F97C1" stroke-width="1.1" stroke-linecap="round"/>
+<text x="218.2" y="552" font-size="10.5" font-weight="400" fill="#2F97C1" text-decoration="underline">e-posta bağlantısı</text>
+<text x="316.2" y="552" font-size="9" font-weight="400" fill="#1B3C73" fill-opacity="0.65">(adres girilince görünür)</text>
+<circle cx="448.2" cy="548" r="8" fill="#F47A1F" stroke="#FFFFFF" stroke-width="1.5"/>
+<text x="448.2" y="551.2" font-size="9" font-weight="700" fill="#FFFFFF" text-anchor="middle">3</text>
+</g>
+<text x="736" y="77" font-size="10.5" font-weight="400" fill="#1B3C73" fill-opacity="0.75">Telefon · 640 px altı</text>
+<rect x="736" y="86" width="240" height="496" fill="#F8F9FA" rx="10" stroke="#E2E8F0" stroke-width="1"/>
+<clipPath id="k2"><rect x="736" y="86" width="240" height="496" rx="10"/></clipPath><g clip-path="url(#k2)">
+<rect x="736" y="86" width="240" height="30" fill="#682D8B"/>
+<circle cx="756" cy="101" r="9" fill="#FFFFFF"/>
+<text x="772" y="104.5" font-size="9.5" font-weight="600" fill="#FFFFFF">Teknofest Kulübü</text>
+<circle cx="956" cy="101" r="9" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="0.8" fill-opacity="0.14" stroke-opacity="0.5"/>
+<line x1="952" y1="98" x2="960" y2="98" stroke="#FFFFFF" stroke-width="1.1" stroke-linecap="round"/>
+<line x1="952" y1="101" x2="960" y2="101" stroke="#FFFFFF" stroke-width="1.1" stroke-linecap="round"/>
+<line x1="952" y1="104" x2="960" y2="104" stroke="#FFFFFF" stroke-width="1.1" stroke-linecap="round"/>
+<text x="750" y="146" font-size="8.5" font-weight="600" fill="#F47A1F" letter-spacing="1.4">EKİBİMİZ</text>
+<text x="750" y="168" font-size="15" font-weight="600" fill="#1B3C73">Kulübü yürütenler</text>
+<rect x="752" y="191" width="208" height="140" fill="#2B4F87" rx="12" fill-opacity="0.09"/>
+<rect x="750" y="186" width="212" height="140" fill="#FFFFFF" rx="10" stroke="#2F97C1" stroke-width="1" stroke-opacity="0.2"/>
+<circle cx="856" cy="226" r="24" fill="#2F97C1"/>
+<text x="856" y="230.5" font-size="13" font-weight="600" fill="#FFFFFF" text-anchor="middle">Ö1</text>
+<text x="856" y="272" font-size="11.5" font-weight="600" fill="#1B3C73" text-anchor="middle">Örnek Üye 1</text>
+<text x="856" y="288" font-size="9.5" font-weight="400" fill="#2F97C1" text-anchor="middle">Kulüp Başkanı</text>
+<text x="856" y="304" font-size="9" font-weight="400" fill="#1B3C73" text-anchor="middle" fill-opacity="0.75">Örnek Bölüm, 1. sınıf</text>
+<rect x="752" y="343" width="208" height="140" fill="#2B4F87" rx="12" fill-opacity="0.09"/>
+<rect x="750" y="338" width="212" height="140" fill="#FFFFFF" rx="10" stroke="#2F97C1" stroke-width="1" stroke-opacity="0.2"/>
+<circle cx="856" cy="378" r="24" fill="#2F97C1"/>
+<text x="856" y="382.5" font-size="13" font-weight="600" fill="#FFFFFF" text-anchor="middle">Ö2</text>
+<text x="856" y="424" font-size="11.5" font-weight="600" fill="#1B3C73" text-anchor="middle">Örnek Üye 2</text>
+<text x="856" y="440" font-size="9.5" font-weight="400" fill="#2F97C1" text-anchor="middle">Örnek ünvan</text>
+<text x="856" y="456" font-size="9" font-weight="400" fill="#1B3C73" text-anchor="middle" fill-opacity="0.75">Örnek Bölüm, 2. sınıf</text>
+<rect x="750" y="498" width="212" height="26" fill="#2F97C1" rx="13"/>
+<text x="856" y="514.6" font-size="10" font-weight="600" fill="#FFFFFF" text-anchor="middle">Ekibe Katıl</text>
+<rect x="788" y="544" width="14" height="10" fill="none" rx="2" stroke="#2F97C1" stroke-width="1.2"/>
+<line x1="789.5" y1="546" x2="795" y2="550" stroke="#2F97C1" stroke-width="1.1" stroke-linecap="round"/>
+<line x1="800.5" y1="546" x2="795" y2="550" stroke="#2F97C1" stroke-width="1.1" stroke-linecap="round"/>
+<text x="808" y="553" font-size="10.5" font-weight="400" fill="#2F97C1" text-decoration="underline">e-posta bağlantısı</text>
+</g>
+<text x="24" y="616" font-size="11.5" font-weight="600" fill="#1B3C73">Notlar</text>
+<circle cx="32" cy="632.4" r="8" fill="#F47A1F"/>
+<text x="32" y="635.6" font-size="9" font-weight="700" fill="#FFFFFF" text-anchor="middle">1</text>
+<text x="48" y="636" font-size="10.5" font-weight="400" fill="#0F172A">Yalnızca aktif ve silinmemiş üyeler; sıra displayOrder. Fotoğraf yoksa dairede baş harfler yazar. Eksik son satır sola yaslıdır.</text>
+<circle cx="32" cy="651.4" r="8" fill="#F47A1F"/>
+<text x="32" y="654.6" font-size="9" font-weight="700" fill="#FFFFFF" text-anchor="middle">2</text>
+<text x="48" y="655" font-size="10.5" font-weight="400" fill="#0F172A">&quot;Ekibe Katıl&quot; başvuru formunu açar (#19). Düğme hata, yükleniyor ve boş durumda da görünür.</text>
+<circle cx="32" cy="670.4" r="8" fill="#F47A1F"/>
+<text x="32" y="673.6" font-size="9" font-weight="700" fill="#FFFFFF" text-anchor="middle">3</text>
+<text x="48" y="674" font-size="10.5" font-weight="400" fill="#0F172A">E-posta bağlantısı AppConstants.contactEmail boşken çizilmez; adres #21 ile girilecek.</text>
+<circle cx="32" cy="689.4" r="8" fill="#F47A1F"/>
+<text x="32" y="692.6" font-size="9" font-weight="700" fill="#FFFFFF" text-anchor="middle">4</text>
+<text x="48" y="693" font-size="10.5" font-weight="400" fill="#0F172A">Sahte verideki ad ve ünvanlar örnektir; gerçek kişiler admin panelinden girilecek.</text>
+</svg>
