@@ -22,7 +22,7 @@ Kuralların tek doğru kaynağı [`CLAUDE.md`](../CLAUDE.md) dosyasıdır; bu re
 
 1. GitHub'da bir **Görev** issue'su al.
 2. Terminalde proje klasöründe `claude` yaz.
-3. Claude'a söyle: *"#12 numaralı görevi yapacağız. Dalı aç, sonra bana plan göster; onaylamadan dosyaya dokunma."*
+3. Claude'a söyle: *"#13 numaralı görevi yapacağız. Dalı aç, sonra bana plan göster; onaylamadan dosyaya dokunma."*
 4. Planı oku, düzelt, onayla. Claude yazsın.
 5. Siteyi aç (`bash tool/dev.sh`), **kendi gözünle** bak. Sonra: *"Kalite kapısını çalıştır."*
 6. Yeşilse: *"Commit et ve PR aç."*
@@ -262,7 +262,7 @@ Claude bazı işlerden önce izin ister. Okumadan "evet" deme.
 
 | Kötü | İyi |
 |---|---|
-| "Projeler kısmını yap" | "#12 numaralı görevi yapacağız. Issue'yu ve `docs/analiz.md`'deki Projeler başlığını oku, bana numaralı plan göster. Onaylamadan dosyaya dokunma." |
+| "Projeler kısmını yap" | "#13 numaralı görevi yapacağız. Issue'yu ve `docs/analiz.md`'deki Projeler başlığını oku, bana numaralı plan göster. Onaylamadan dosyaya dokunma." |
 | "Hata var düzelt" | "Telefonda (375 px) çekmeceden Galeri'ye basınca menü kapanıyor ama sayfa kaymıyor. Önce nedenini bul ve bana anlat, sonra düzeltme öner." |
 | "Güzel olsun" | "Kartlar arası boşluk üst bardaki boşlukla aynı olsun; `docs/token-map.md`'deki token'ları kullan." |
 | "Hepsini bitir" | "Yalnızca etiket filtresini yap. Arama kutusu ayrı görev, dokunma." |
@@ -307,7 +307,7 @@ Claude yanılabilir ve yanıldığında da kendinden emin konuşur. Şunlara **k
 
 ## 5. Bir özelliği baştan sona geliştirme
 
-Örnek: **#12 — Projeler bölümü**. Her adımda Claude'a yazacağın cümle ve senin bakacağın şey var.
+Örnek: **#13 — Projeler bölümü**. Her adımda Claude'a yazacağın cümle ve senin bakacağın şey var.
 
 ### Adım 1 — Görevi al
 
@@ -329,7 +329,7 @@ cd gu_teknofest && git switch main && git pull --ff-only origin main && claude
 ### Adım 3 — Dalı açtır
 
 ```text
-#12 numaralı görev için dal aç.
+#13 numaralı görev için dal aç.
 ```
 
 **Bak:** dal adı `feat/12-projeler-bolumu` biçiminde mi (`tür/issue-no-kısa-ad`).
@@ -337,7 +337,7 @@ cd gu_teknofest && git switch main && git pull --ff-only origin main && claude
 ### Adım 4 — Plan iste
 
 ```text
-#12 numaralı görevi yapacağız. Issue'yu, docs/analiz.md'deki "Projeler" başlığını ve
+#13 numaralı görevi yapacağız. Issue'yu, docs/analiz.md'deki "Projeler" başlığını ve
 mevcut bölüm dosyasını oku. Bana numaralı bir plan göster: hangi dosyalar, hangi durumlar,
 hangi testler. Ben onaylamadan dosyaya dokunma.
 ```
@@ -363,7 +363,9 @@ bash tool/dev.sh
 ```
 
 **Bak:** masaüstü genişliği, sonra tarayıcıyı daraltıp telefon genişliği. Yükleniyor durumu görünüyor
-mu? Metinler taşıyor mu? Beğenmediğini tarif et:
+mu? Metinler taşıyor mu? Görev numaranla başlayan taslağı yan sekmede aç ve karşılaştır:
+[`tasarim-referansi.md`](tasarim-referansi.md) (ör. `docs/tasarim/13-projeler.svg`). Taslağın altındaki
+notları tek tek dene. Beğenmediğini tarif et:
 
 ```text
 Telefonda kart başlıkları iki satıra taşınca kartların boyu eşit durmuyor. Düzelt.
@@ -393,7 +395,7 @@ Arayüz değiştiği için tf-site-parity-reviewer'ı da çalıştır. Bulgular�
 Commit et ve PR aç.
 ```
 
-**Bak:** PR başlığı `feat(landing): projeler bölümünü ekle` gibi mi; gövdede `Closes #12` var mı;
+**Bak:** PR başlığı `feat(landing): projeler bölümünü ekle` gibi mi; gövdede `Closes #13` var mı;
 işaretli kutular **gerçekten** yapılmış mı; ekran görüntüsü eklenmiş mi (ekleyemediyse sen ekle).
 
 ### Adım 10 — İnceleme ve birleştirme
@@ -457,7 +459,7 @@ ilgili skill'i kendisi yükler; emin olmak istersen adını yaz (`/tf-testing`) 
 | `tf-quality-gate` | Kapı çalıştırılırken, kırmızıyken | "Kalite kapısını çalıştır." |
 | `tf-soft-delete` | Silme, geri alma | "Admin'de proje silme düğmesi." |
 | `tf-issue` | Görev, hata, öneri kaydı | "Bu hata için issue taslağı hazırla." |
-| `tf-branch` | Dal açarken | "#12 için dal aç." |
+| `tf-branch` | Dal açarken | "#13 için dal aç." |
 | `tf-pr` | PR açarken, yorumlara cevap verirken | "PR aç." |
 | `tf-ask-user` | Claude sana soru soracakken | (kendiliğinden) |
 | `tf-decision-log` | Bir karar alındığında ya da değiştiğinde | "Bu kararı kayda geçir." |
@@ -568,6 +570,7 @@ Tamamı ve gerekçeleri: [`decisions.md`](decisions.md). Sormadan değiştirilme
 | Ne yapılacak, referans site nasıl? | [`analiz.md`](analiz.md) |
 | Klasörler ve katmanlar | [`architecture.md`](architecture.md) |
 | Neden böyle karar verildi? | [`decisions.md`](decisions.md) |
+| Yaptığım şey nasıl görünmeli? | [`tasarim-referansi.md`](tasarim-referansi.md) (taslaklar: [`tasarim/`](tasarim/)) |
 | Hangi renk, boşluk, yazı stili? | [`token-map.md`](token-map.md) |
 | Hangi paket kullanılabilir? | [`packages.md`](packages.md) |
 | Betikler ne yapıyor? | [`tool/README.md`](../tool/README.md) |

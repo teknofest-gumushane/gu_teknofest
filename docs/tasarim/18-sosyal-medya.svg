@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 550" width="1000" height="550" font-family="Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif" role="img" aria-label="#18 Sosyal medya bölümü: tasarım taslağı">
+<title>#18 Sosyal medya bölümü: tasarım taslağı</title>
+<defs><linearGradient id="hero" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#682D8B"/><stop offset=".5" stop-color="#2F97C1"/><stop offset="1" stop-color="#1B3C73"/></linearGradient></defs>
+<rect width="1000" height="550" fill="#FFFFFF"/>
+<rect x="24" y="20" width="52" height="26" rx="13" fill="#F47A1F"/>
+<text x="50" y="37.5" font-size="12.5" font-weight="700" fill="#FFFFFF" text-anchor="middle">#18</text>
+<text x="88" y="39" font-size="18" font-weight="600" fill="#1B3C73">Sosyal medya bölümü</text>
+<text x="976" y="32" font-size="10" fill="#1B3C73" fill-opacity=".7" text-anchor="end">Şematik taslak: yerleşimi ve durumları gösterir.</text>
+<text x="976" y="46" font-size="10" fill="#1B3C73" fill-opacity=".7" text-anchor="end">Ölçü ve renk için token, davranış için issue geçerlidir.</text>
+<line x1="24" y1="58" x2="976" y2="58" stroke="#E2E8F0"/>
+<text x="24" y="77" font-size="10.5" font-weight="400" fill="#1B3C73" fill-opacity="0.75">Masaüstü · 1024 px ve üstü</text>
+<rect x="24" y="86" width="680" height="330" fill="#F8F9FA" rx="10" stroke="#E2E8F0" stroke-width="1"/>
+<clipPath id="k1"><rect x="24" y="86" width="680" height="330" rx="10"/></clipPath><g clip-path="url(#k1)">
+<rect x="24" y="86" width="680" height="30" fill="#682D8B"/>
+<circle cx="44" cy="101" r="9" fill="#FFFFFF"/>
+<text x="60" y="104.5" font-size="9.5" font-weight="600" fill="#FFFFFF">Teknofest Kulübü</text>
+<rect x="612" y="93" width="76" height="16" fill="#2F97C1" rx="8"/>
+<text x="650" y="104" font-size="8" font-weight="600" fill="#FFFFFF" text-anchor="middle">Takıma Katıl</text>
+<text x="600" y="104.5" font-size="8" font-weight="400" fill="#FFFFFF" text-anchor="end" fill-opacity="0.92">Sosyal Medya</text>
+<text x="536.4" y="104.5" font-size="8" font-weight="400" fill="#FFFFFF" text-anchor="end" fill-opacity="0.92">Ekibimiz</text>
+<text x="490" y="104.5" font-size="8" font-weight="400" fill="#FFFFFF" text-anchor="end" fill-opacity="0.92">Galeri</text>
+<text x="452.2" y="104.5" font-size="8" font-weight="400" fill="#FFFFFF" text-anchor="end" fill-opacity="0.92">Etkinlikler</text>
+<text x="392.9" y="104.5" font-size="8" font-weight="400" fill="#FFFFFF" text-anchor="end" fill-opacity="0.92">Projeler</text>
+<text x="346.5" y="104.5" font-size="8" font-weight="400" fill="#FFFFFF" text-anchor="end" fill-opacity="0.92">Hakkımızda</text>
+<text x="60" y="150" font-size="8.5" font-weight="600" fill="#F47A1F" letter-spacing="1.4">SOSYAL MEDYA</text>
+<text x="60" y="175" font-size="18" font-weight="600" fill="#1B3C73">Bizi takip edin</text>
+<text x="60" y="199" font-size="9.5" font-weight="400" fill="#1B3C73" fill-opacity="0.75">Adresler girilince</text>
+<circle cx="80" cy="229" r="20" fill="#2F97C1"/>
+<text x="80" y="232.6" font-size="10" font-weight="700" fill="#FFFFFF" text-anchor="middle">IG</text>
+<circle cx="136" cy="229" r="20" fill="#2F97C1"/>
+<text x="136" y="232.6" font-size="10" font-weight="700" fill="#FFFFFF" text-anchor="middle">WA</text>
+<circle cx="192" cy="229" r="20" fill="#2F97C1"/>
+<text x="192" y="232.6" font-size="10" font-weight="700" fill="#FFFFFF" text-anchor="middle">YT</text>
+<circle cx="248" cy="229" r="20" fill="#2F97C1"/>
+<text x="248" y="232.6" font-size="10" font-weight="700" fill="#FFFFFF" text-anchor="middle">in</text>
+<circle cx="296" cy="229" r="8" fill="#F47A1F" stroke="#FFFFFF" stroke-width="1.5"/>
+<text x="296" y="232.2" font-size="9" font-weight="700" fill="#FFFFFF" text-anchor="middle">1</text>
+<text x="60" y="279" font-size="9.5" font-weight="400" fill="#1B3C73" fill-opacity="0.75">Bugün (adresler boşken)</text>
+<rect x="60" y="289" width="300" height="92" fill="none" rx="10" stroke="#2F97C1" stroke-width="1" stroke-opacity="0.45" stroke-dasharray="5 4"/>
+<rect x="198" y="307" width="24" height="18" fill="none" rx="3" stroke="#2F97C1" stroke-width="1.4"/>
+<line x1="198" y1="317" x2="205" y2="317" stroke="#2F97C1" stroke-width="1.4" stroke-linecap="round"/>
+<line x1="215" y1="317" x2="222" y2="317" stroke="#2F97C1" stroke-width="1.4" stroke-linecap="round"/>
+<text x="210" y="353" font-size="11" font-weight="600" fill="#1B3C73" text-anchor="middle">Hesaplarımız yakında burada.</text>
+<circle cx="376" cy="303" r="8" fill="#F47A1F" stroke="#FFFFFF" stroke-width="1.5"/>
+<text x="376" y="306.2" font-size="9" font-weight="700" fill="#FFFFFF" text-anchor="middle">2</text>
+</g>
+<text x="736" y="77" font-size="10.5" font-weight="400" fill="#1B3C73" fill-opacity="0.75">Telefon · 640 px altı</text>
+<rect x="736" y="86" width="240" height="330" fill="#F8F9FA" rx="10" stroke="#E2E8F0" stroke-width="1"/>
+<clipPath id="k2"><rect x="736" y="86" width="240" height="330" rx="10"/></clipPath><g clip-path="url(#k2)">
+<rect x="736" y="86" width="240" height="30" fill="#682D8B"/>
+<circle cx="756" cy="101" r="9" fill="#FFFFFF"/>
+<text x="772" y="104.5" font-size="9.5" font-weight="600" fill="#FFFFFF">Teknofest Kulübü</text>
+<circle cx="956" cy="101" r="9" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="0.8" fill-opacity="0.14" stroke-opacity="0.5"/>
+<line x1="952" y1="98" x2="960" y2="98" stroke="#FFFFFF" stroke-width="1.1" stroke-linecap="round"/>
+<line x1="952" y1="101" x2="960" y2="101" stroke="#FFFFFF" stroke-width="1.1" stroke-linecap="round"/>
+<line x1="952" y1="104" x2="960" y2="104" stroke="#FFFFFF" stroke-width="1.1" stroke-linecap="round"/>
+<text x="750" y="146" font-size="8.5" font-weight="600" fill="#F47A1F" letter-spacing="1.4">SOSYAL MEDYA</text>
+<text x="750" y="168" font-size="15" font-weight="600" fill="#1B3C73">Bizi takip edin</text>
+<circle cx="768" cy="212" r="18" fill="#2F97C1"/>
+<text x="768" y="215.6" font-size="10" font-weight="700" fill="#FFFFFF" text-anchor="middle">IG</text>
+<circle cx="816" cy="212" r="18" fill="#2F97C1"/>
+<text x="816" y="215.6" font-size="10" font-weight="700" fill="#FFFFFF" text-anchor="middle">WA</text>
+<circle cx="864" cy="212" r="18" fill="#2F97C1"/>
+<text x="864" y="215.6" font-size="10" font-weight="700" fill="#FFFFFF" text-anchor="middle">YT</text>
+<circle cx="912" cy="212" r="18" fill="#2F97C1"/>
+<text x="912" y="215.6" font-size="10" font-weight="700" fill="#FFFFFF" text-anchor="middle">in</text>
+<rect x="750" y="252" width="212" height="92" fill="none" rx="10" stroke="#2F97C1" stroke-width="1" stroke-opacity="0.45" stroke-dasharray="5 4"/>
+<rect x="844" y="270" width="24" height="18" fill="none" rx="3" stroke="#2F97C1" stroke-width="1.4"/>
+<line x1="844" y1="280" x2="851" y2="280" stroke="#2F97C1" stroke-width="1.4" stroke-linecap="round"/>
+<line x1="861" y1="280" x2="868" y2="280" stroke="#2F97C1" stroke-width="1.4" stroke-linecap="round"/>
+<text x="856" y="316" font-size="11" font-weight="600" fill="#1B3C73" text-anchor="middle">Hesaplarımız yakında burada.</text>
+</g>
+<text x="24" y="450" font-size="11.5" font-weight="600" fill="#1B3C73">Notlar</text>
+<circle cx="32" cy="466.4" r="8" fill="#F47A1F"/>
+<text x="32" y="469.6" font-size="9" font-weight="700" fill="#FFFFFF" text-anchor="middle">1</text>
+<text x="48" y="470" font-size="10.5" font-weight="400" fill="#0F172A">Sıra sabittir: Instagram, WhatsApp, YouTube, LinkedIn. Adresi boş ya da geçersiz olan hesabın düğmesi çizilmez.</text>
+<circle cx="32" cy="485.4" r="8" fill="#F47A1F"/>
+<text x="32" y="488.6" font-size="9" font-weight="700" fill="#FFFFFF" text-anchor="middle">2</text>
+<text x="48" y="489" font-size="10.5" font-weight="400" fill="#0F172A">Hiç adres yoksa bölüm kaybolmaz; &quot;Hesaplarımız yakında burada.&quot; yazar. Bugün sabitler boş olduğu için bu hal görünür.</text>
+<circle cx="32" cy="504.4" r="8" fill="#F47A1F"/>
+<text x="32" y="507.6" font-size="9" font-weight="700" fill="#FFFFFF" text-anchor="middle">3</text>
+<text x="48" y="508" font-size="10.5" font-weight="400" fill="#0F172A">Düğme hesabı yeni sekmede açar; açılamazsa &quot;Bağlantı açılamadı.&quot; bildirimi çıkar. Etiketler ARB&#x27;den gelir.</text>
+<circle cx="32" cy="523.4" r="8" fill="#F47A1F"/>
+<text x="32" y="526.6" font-size="9" font-weight="700" fill="#FFFFFF" text-anchor="middle">4</text>
+<text x="48" y="527" font-size="10.5" font-weight="400" fill="#0F172A">Taslaktaki harfler yer tutucudur; gerçek ikonlar #10 ile gelir (D-30).</text>
+</svg>

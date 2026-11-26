@@ -1,0 +1,165 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 663" width="1000" height="663" font-family="Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif" role="img" aria-label="#13 Projeler bölümü: tasarım taslağı">
+<title>#13 Projeler bölümü: tasarım taslağı</title>
+<defs><linearGradient id="hero" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#682D8B"/><stop offset=".5" stop-color="#2F97C1"/><stop offset="1" stop-color="#1B3C73"/></linearGradient></defs>
+<rect width="1000" height="663" fill="#FFFFFF"/>
+<rect x="24" y="20" width="52" height="26" rx="13" fill="#F47A1F"/>
+<text x="50" y="37.5" font-size="12.5" font-weight="700" fill="#FFFFFF" text-anchor="middle">#13</text>
+<text x="88" y="39" font-size="18" font-weight="600" fill="#1B3C73">Projeler bölümü</text>
+<text x="976" y="32" font-size="10" fill="#1B3C73" fill-opacity=".7" text-anchor="end">Şematik taslak: yerleşimi ve durumları gösterir.</text>
+<text x="976" y="46" font-size="10" fill="#1B3C73" fill-opacity=".7" text-anchor="end">Ölçü ve renk için token, davranış için issue geçerlidir.</text>
+<line x1="24" y1="58" x2="976" y2="58" stroke="#E2E8F0"/>
+<text x="24" y="77" font-size="10.5" font-weight="400" fill="#1B3C73" fill-opacity="0.75">Masaüstü · 1024 px ve üstü</text>
+<rect x="24" y="86" width="680" height="424" fill="#F8F9FA" rx="10" stroke="#E2E8F0" stroke-width="1"/>
+<clipPath id="k1"><rect x="24" y="86" width="680" height="424" rx="10"/></clipPath><g clip-path="url(#k1)">
+<rect x="24" y="86" width="680" height="30" fill="#682D8B"/>
+<circle cx="44" cy="101" r="9" fill="#FFFFFF"/>
+<text x="60" y="104.5" font-size="9.5" font-weight="600" fill="#FFFFFF">Teknofest Kulübü</text>
+<rect x="612" y="93" width="76" height="16" fill="#2F97C1" rx="8"/>
+<text x="650" y="104" font-size="8" font-weight="600" fill="#FFFFFF" text-anchor="middle">Takıma Katıl</text>
+<text x="600" y="104.5" font-size="8" font-weight="400" fill="#FFFFFF" text-anchor="end" fill-opacity="0.92">Sosyal Medya</text>
+<text x="536.4" y="104.5" font-size="8" font-weight="400" fill="#FFFFFF" text-anchor="end" fill-opacity="0.92">Ekibimiz</text>
+<text x="490" y="104.5" font-size="8" font-weight="400" fill="#FFFFFF" text-anchor="end" fill-opacity="0.92">Galeri</text>
+<text x="452.2" y="104.5" font-size="8" font-weight="400" fill="#FFFFFF" text-anchor="end" fill-opacity="0.92">Etkinlikler</text>
+<text x="392.9" y="104.5" font-size="8" font-weight="400" fill="#FFFFFF" text-anchor="end" fill-opacity="0.92">Projeler</text>
+<text x="346.5" y="104.5" font-size="8" font-weight="400" fill="#FFFFFF" text-anchor="end" fill-opacity="0.92">Hakkımızda</text>
+<text x="60" y="150" font-size="8.5" font-weight="600" fill="#F47A1F" letter-spacing="1.4">PROJELER</text>
+<text x="60" y="175" font-size="18" font-weight="600" fill="#1B3C73">Üzerinde çalıştıklarımız</text>
+<rect x="60" y="193" width="44.8" height="22" fill="#2F97C1" rx="11"/>
+<text x="82.4" y="207.3" font-size="9.5" font-weight="500" fill="#FFFFFF" text-anchor="middle">Tümü</text>
+<rect x="110.8" y="193" width="56.2" height="22" fill="#FFFFFF" rx="11" stroke="#2F97C1" stroke-width="1" stroke-opacity="0.35"/>
+<text x="138.9" y="207.3" font-size="9.5" font-weight="500" fill="#1B3C73" text-anchor="middle">Otonom</text>
+<rect x="173" y="193" width="61.9" height="22" fill="#FFFFFF" rx="11" stroke="#2F97C1" stroke-width="1" stroke-opacity="0.35"/>
+<text x="203.95" y="207.3" font-size="9.5" font-weight="500" fill="#1B3C73" text-anchor="middle">Robotik</text>
+<rect x="240.9" y="193" width="56.2" height="22" fill="#FFFFFF" rx="11" stroke="#2F97C1" stroke-width="1" stroke-opacity="0.35"/>
+<text x="269" y="207.3" font-size="9.5" font-weight="500" fill="#1B3C73" text-anchor="middle">Sağlık</text>
+<rect x="303.1" y="193" width="39.1" height="22" fill="#FFFFFF" rx="11" stroke="#2F97C1" stroke-width="1" stroke-opacity="0.35"/>
+<text x="322.65" y="207.3" font-size="9.5" font-weight="500" fill="#1B3C73" text-anchor="middle">Web</text>
+<rect x="348.2" y="193" width="79" height="22" fill="#FFFFFF" rx="11" stroke="#2F97C1" stroke-width="1" stroke-opacity="0.35"/>
+<text x="387.7" y="207.3" font-size="9.5" font-weight="500" fill="#1B3C73" text-anchor="middle">Yapay Zekâ</text>
+<circle cx="441.2" cy="204" r="8" fill="#F47A1F" stroke="#FFFFFF" stroke-width="1.5"/>
+<text x="441.2" y="207.2" font-size="9" font-weight="700" fill="#FFFFFF" text-anchor="middle">1</text>
+<rect x="478" y="191" width="190" height="26" fill="#FFFFFF" rx="8" stroke="#2F97C1" stroke-width="1" stroke-opacity="0.35"/>
+<circle cx="492" cy="203" r="4.5" fill="none" stroke="#1B3C73" stroke-width="1.3" stroke-opacity="0.6"/>
+<line x1="495.5" y1="206.5" x2="498.5" y2="209.5" stroke="#1B3C73" stroke-width="1.3" stroke-linecap="round" stroke-opacity="0.6"/>
+<text x="506" y="207.5" font-size="9" font-weight="400" fill="#1B3C73" fill-opacity="0.5">Proje adı ya da açıklaması</text>
+<circle cx="682" cy="204" r="8" fill="#F47A1F" stroke="#FFFFFF" stroke-width="1.5"/>
+<text x="682" y="207.2" font-size="9" font-weight="700" fill="#FFFFFF" text-anchor="middle">2</text>
+<rect x="62" y="242" width="188" height="236" fill="#2B4F87" rx="12" fill-opacity="0.09"/>
+<rect x="60" y="237" width="192" height="236" fill="#FFFFFF" rx="10" stroke="#2F97C1" stroke-width="1" stroke-opacity="0.2"/>
+<clipPath id="k2"><rect x="60" y="237" width="192" height="236" rx="10"/></clipPath><g clip-path="url(#k2)">
+<rect x="60" y="237" width="192" height="108" fill="#682D8B"/>
+<text x="156" y="294.5" font-size="9.5" font-weight="600" fill="#FFFFFF" text-anchor="middle">Örnek Proje: Otonom Araç</text>
+</g>
+<rect x="72" y="357" width="42.8" height="15" fill="#F8F9FA" rx="7.5" stroke="#2F97C1" stroke-width="1" stroke-opacity="0.3"/>
+<text x="93.4" y="367.4" font-size="8" font-weight="500" fill="#2F97C1" text-anchor="middle">Otonom</text>
+<rect x="119.8" y="357" width="47.6" height="15" fill="#F8F9FA" rx="7.5" stroke="#2F97C1" stroke-width="1" stroke-opacity="0.3"/>
+<text x="143.6" y="367.4" font-size="8" font-weight="500" fill="#2F97C1" text-anchor="middle">Robotik</text>
+<text x="72" y="393" font-size="11.5" font-weight="600" fill="#1B3C73">Örnek Proje: Otonom Araç</text>
+<rect x="72" y="405" width="168" height="5" fill="#1B3C73" rx="2.5" fill-opacity="0.16"/>
+<rect x="72" y="416" width="168" height="5" fill="#1B3C73" rx="2.5" fill-opacity="0.16"/>
+<rect x="72" y="427" width="104.16" height="5" fill="#1B3C73" rx="2.5" fill-opacity="0.16"/>
+<rect x="270" y="242" width="188" height="236" fill="#2B4F87" rx="12" fill-opacity="0.09"/>
+<rect x="268" y="237" width="192" height="236" fill="#FFFFFF" rx="10" stroke="#2F97C1" stroke-width="1" stroke-opacity="0.2"/>
+<clipPath id="k3"><rect x="268" y="237" width="192" height="236" rx="10"/></clipPath><g clip-path="url(#k3)">
+<rect x="268" y="237" width="192" height="108" fill="#2F97C1"/>
+<text x="364" y="294.5" font-size="9.5" font-weight="600" fill="#FFFFFF" text-anchor="middle">Örnek Proje 2</text>
+</g>
+<rect x="280" y="357" width="42.8" height="15" fill="#F8F9FA" rx="7.5" stroke="#2F97C1" stroke-width="1" stroke-opacity="0.3"/>
+<text x="301.4" y="367.4" font-size="8" font-weight="500" fill="#2F97C1" text-anchor="middle">Sağlık</text>
+<rect x="327.8" y="357" width="62" height="15" fill="#F8F9FA" rx="7.5" stroke="#2F97C1" stroke-width="1" stroke-opacity="0.3"/>
+<text x="358.8" y="367.4" font-size="8" font-weight="500" fill="#2F97C1" text-anchor="middle">Yapay Zekâ</text>
+<text x="280" y="393" font-size="11.5" font-weight="600" fill="#1B3C73">Örnek Proje 2</text>
+<rect x="280" y="405" width="168" height="5" fill="#1B3C73" rx="2.5" fill-opacity="0.16"/>
+<rect x="280" y="416" width="168" height="5" fill="#1B3C73" rx="2.5" fill-opacity="0.16"/>
+<rect x="280" y="427" width="104.16" height="5" fill="#1B3C73" rx="2.5" fill-opacity="0.16"/>
+<rect x="478" y="242" width="188" height="236" fill="#2B4F87" rx="12" fill-opacity="0.09"/>
+<rect x="476" y="237" width="192" height="236" fill="#FFFFFF" rx="10" stroke="#2F97C1" stroke-width="1" stroke-opacity="0.2"/>
+<clipPath id="k4"><rect x="476" y="237" width="192" height="236" rx="10"/></clipPath><g clip-path="url(#k4)">
+<rect x="476" y="237" width="192" height="108" fill="#1B3C73"/>
+<text x="572" y="294.5" font-size="9.5" font-weight="600" fill="#FFFFFF" text-anchor="middle">Örnek Proje 3</text>
+</g>
+<rect x="488" y="357" width="62" height="15" fill="#F8F9FA" rx="7.5" stroke="#2F97C1" stroke-width="1" stroke-opacity="0.3"/>
+<text x="519" y="367.4" font-size="8" font-weight="500" fill="#2F97C1" text-anchor="middle">Tamamlandı</text>
+<rect x="555" y="357" width="28.4" height="15" fill="#F8F9FA" rx="7.5" stroke="#2F97C1" stroke-width="1" stroke-opacity="0.3"/>
+<text x="569.2" y="367.4" font-size="8" font-weight="500" fill="#2F97C1" text-anchor="middle">Web</text>
+<text x="488" y="393" font-size="11.5" font-weight="600" fill="#1B3C73">Örnek Proje 3</text>
+<rect x="488" y="405" width="168" height="5" fill="#1B3C73" rx="2.5" fill-opacity="0.16"/>
+<rect x="488" y="416" width="168" height="5" fill="#1B3C73" rx="2.5" fill-opacity="0.16"/>
+<rect x="488" y="427" width="104.16" height="5" fill="#1B3C73" rx="2.5" fill-opacity="0.16"/>
+<circle cx="76" cy="253" r="8" fill="#F47A1F" stroke="#FFFFFF" stroke-width="1.5"/>
+<text x="76" y="256.2" font-size="9" font-weight="700" fill="#FFFFFF" text-anchor="middle">3</text>
+<circle cx="604" cy="364.5" r="8" fill="#F47A1F" stroke="#FFFFFF" stroke-width="1.5"/>
+<text x="604" y="367.7" font-size="9" font-weight="700" fill="#FFFFFF" text-anchor="middle">4</text>
+</g>
+<text x="736" y="77" font-size="10.5" font-weight="400" fill="#1B3C73" fill-opacity="0.75">Telefon · 640 px altı</text>
+<rect x="736" y="86" width="240" height="424" fill="#F8F9FA" rx="10" stroke="#E2E8F0" stroke-width="1"/>
+<clipPath id="k5"><rect x="736" y="86" width="240" height="424" rx="10"/></clipPath><g clip-path="url(#k5)">
+<rect x="736" y="86" width="240" height="30" fill="#682D8B"/>
+<circle cx="756" cy="101" r="9" fill="#FFFFFF"/>
+<text x="772" y="104.5" font-size="9.5" font-weight="600" fill="#FFFFFF">Teknofest Kulübü</text>
+<circle cx="956" cy="101" r="9" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="0.8" fill-opacity="0.14" stroke-opacity="0.5"/>
+<line x1="952" y1="98" x2="960" y2="98" stroke="#FFFFFF" stroke-width="1.1" stroke-linecap="round"/>
+<line x1="952" y1="101" x2="960" y2="101" stroke="#FFFFFF" stroke-width="1.1" stroke-linecap="round"/>
+<line x1="952" y1="104" x2="960" y2="104" stroke="#FFFFFF" stroke-width="1.1" stroke-linecap="round"/>
+<text x="750" y="146" font-size="8.5" font-weight="600" fill="#F47A1F" letter-spacing="1.4">PROJELER</text>
+<text x="750" y="168" font-size="15" font-weight="600" fill="#1B3C73">Üzerinde çalıştıklarımız</text>
+<rect x="750" y="184" width="44.8" height="22" fill="#2F97C1" rx="11"/>
+<text x="772.4" y="198.3" font-size="9.5" font-weight="500" fill="#FFFFFF" text-anchor="middle">Tümü</text>
+<rect x="800.8" y="184" width="56.2" height="22" fill="#FFFFFF" rx="11" stroke="#2F97C1" stroke-width="1" stroke-opacity="0.35"/>
+<text x="828.9" y="198.3" font-size="9.5" font-weight="500" fill="#1B3C73" text-anchor="middle">Otonom</text>
+<rect x="863" y="184" width="61.9" height="22" fill="#FFFFFF" rx="11" stroke="#2F97C1" stroke-width="1" stroke-opacity="0.35"/>
+<text x="893.95" y="198.3" font-size="9.5" font-weight="500" fill="#1B3C73" text-anchor="middle">Robotik</text>
+<rect x="750" y="212" width="56.2" height="22" fill="#FFFFFF" rx="11" stroke="#2F97C1" stroke-width="1" stroke-opacity="0.35"/>
+<text x="778.1" y="226.3" font-size="9.5" font-weight="500" fill="#1B3C73" text-anchor="middle">Sağlık</text>
+<rect x="812.2" y="212" width="39.1" height="22" fill="#FFFFFF" rx="11" stroke="#2F97C1" stroke-width="1" stroke-opacity="0.35"/>
+<text x="831.75" y="226.3" font-size="9.5" font-weight="500" fill="#1B3C73" text-anchor="middle">Web</text>
+<rect x="857.3" y="212" width="79" height="22" fill="#FFFFFF" rx="11" stroke="#2F97C1" stroke-width="1" stroke-opacity="0.35"/>
+<text x="896.8" y="226.3" font-size="9.5" font-weight="500" fill="#1B3C73" text-anchor="middle">Yapay Zekâ</text>
+<rect x="750" y="244" width="212" height="26" fill="#FFFFFF" rx="8" stroke="#2F97C1" stroke-width="1" stroke-opacity="0.35"/>
+<circle cx="764" cy="256" r="4.5" fill="none" stroke="#1B3C73" stroke-width="1.3" stroke-opacity="0.6"/>
+<line x1="767.5" y1="259.5" x2="770.5" y2="262.5" stroke="#1B3C73" stroke-width="1.3" stroke-linecap="round" stroke-opacity="0.6"/>
+<text x="778" y="260.5" font-size="9" font-weight="400" fill="#1B3C73" fill-opacity="0.5">Proje adı ya da açıklaması</text>
+<rect x="752" y="289" width="208" height="212" fill="#2B4F87" rx="12" fill-opacity="0.09"/>
+<rect x="750" y="284" width="212" height="212" fill="#FFFFFF" rx="10" stroke="#2F97C1" stroke-width="1" stroke-opacity="0.2"/>
+<clipPath id="k6"><rect x="750" y="284" width="212" height="212" rx="10"/></clipPath><g clip-path="url(#k6)">
+<rect x="750" y="284" width="212" height="118" fill="#682D8B"/>
+<text x="856" y="346.5" font-size="9.5" font-weight="600" fill="#FFFFFF" text-anchor="middle">Örnek Proje: Otonom Araç</text>
+</g>
+<rect x="762" y="414" width="42.8" height="15" fill="#F8F9FA" rx="7.5" stroke="#2F97C1" stroke-width="1" stroke-opacity="0.3"/>
+<text x="783.4" y="424.4" font-size="8" font-weight="500" fill="#2F97C1" text-anchor="middle">Otonom</text>
+<rect x="809.8" y="414" width="47.6" height="15" fill="#F8F9FA" rx="7.5" stroke="#2F97C1" stroke-width="1" stroke-opacity="0.3"/>
+<text x="833.6" y="424.4" font-size="8" font-weight="500" fill="#2F97C1" text-anchor="middle">Robotik</text>
+<text x="762" y="450" font-size="11.5" font-weight="600" fill="#1B3C73">Örnek Proje: Otonom Araç</text>
+<rect x="762" y="462" width="188" height="5" fill="#1B3C73" rx="2.5" fill-opacity="0.16"/>
+<rect x="762" y="473" width="188" height="5" fill="#1B3C73" rx="2.5" fill-opacity="0.16"/>
+<rect x="762" y="484" width="116.56" height="5" fill="#1B3C73" rx="2.5" fill-opacity="0.16"/>
+<rect x="752" y="513" width="208" height="212" fill="#2B4F87" rx="12" fill-opacity="0.09"/>
+<rect x="750" y="508" width="212" height="212" fill="#FFFFFF" rx="10" stroke="#2F97C1" stroke-width="1" stroke-opacity="0.2"/>
+<clipPath id="k7"><rect x="750" y="508" width="212" height="212" rx="10"/></clipPath><g clip-path="url(#k7)">
+<rect x="750" y="508" width="212" height="118" fill="#2F97C1"/>
+<text x="856" y="570.5" font-size="9.5" font-weight="600" fill="#FFFFFF" text-anchor="middle">Örnek Proje 2</text>
+</g>
+<rect x="762" y="638" width="42.8" height="15" fill="#F8F9FA" rx="7.5" stroke="#2F97C1" stroke-width="1" stroke-opacity="0.3"/>
+<text x="783.4" y="648.4" font-size="8" font-weight="500" fill="#2F97C1" text-anchor="middle">Sağlık</text>
+<text x="762" y="674" font-size="11.5" font-weight="600" fill="#1B3C73">Örnek Proje 2</text>
+<rect x="762" y="686" width="188" height="5" fill="#1B3C73" rx="2.5" fill-opacity="0.16"/>
+<rect x="762" y="697" width="188" height="5" fill="#1B3C73" rx="2.5" fill-opacity="0.16"/>
+<rect x="762" y="708" width="116.56" height="5" fill="#1B3C73" rx="2.5" fill-opacity="0.16"/>
+</g>
+<text x="24" y="544" font-size="11.5" font-weight="600" fill="#1B3C73">Notlar</text>
+<circle cx="32" cy="560.4" r="8" fill="#F47A1F"/>
+<text x="32" y="563.6" font-size="9" font-weight="700" fill="#FFFFFF" text-anchor="middle">1</text>
+<text x="48" y="564" font-size="10.5" font-weight="400" fill="#0F172A">Etiket çipleri tek seçimlidir; &quot;Tümü&quot; varsayılandır. Çipler projelerdeki etiketlerden türetilir, Türkçe alfabetik sırayla.</text>
+<circle cx="32" cy="579.4" r="8" fill="#F47A1F"/>
+<text x="32" y="582.6" font-size="9" font-weight="700" fill="#FFFFFF" text-anchor="middle">2</text>
+<text x="48" y="583" font-size="10.5" font-weight="400" fill="#0F172A">Arama ad ve açıklamada, Türkçe duyarlı arar; filtreyle birlikte çalışır. Temizle düğmesi yalnızca metin varken görünür.</text>
+<circle cx="32" cy="598.4" r="8" fill="#F47A1F"/>
+<text x="32" y="601.6" font-size="9" font-weight="700" fill="#FFFFFF" text-anchor="middle">3</text>
+<text x="48" y="602" font-size="10.5" font-weight="400" fill="#0F172A">Görsel yolu yoksa ya da sahte verideyse: yoldan türetilen renkte, üstünde başlığı yazan kutu çizilir (D-28).</text>
+<circle cx="32" cy="617.4" r="8" fill="#F47A1F"/>
+<text x="32" y="620.6" font-size="9" font-weight="700" fill="#FFFFFF" text-anchor="middle">4</text>
+<text x="48" y="621" font-size="10.5" font-weight="400" fill="#0F172A">Tamamlanan projede &quot;Tamamlandı&quot; etiketi olur. Eşleşme yoksa: &quot;Aramanıza uyan proje bulunamadı.&quot; ve &quot;Filtreleri temizle&quot;.</text>
+<circle cx="32" cy="636.4" r="8" fill="#F47A1F"/>
+<text x="32" y="639.6" font-size="9" font-weight="700" fill="#FFFFFF" text-anchor="middle">5</text>
+<text x="48" y="640" font-size="10.5" font-weight="400" fill="#0F172A">Durum sırası: hata (tekrar dene), yükleniyor, boş, dolu. Sütun sayısı: 1 / 2 / 3.</text>
+</svg>

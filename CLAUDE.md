@@ -214,6 +214,7 @@ Tüm betikler: [`tool/README.md`](tool/README.md).
 | Kilitli kararlar | `docs/decisions.md` |
 | İzin verilen paketler | `docs/packages.md` |
 | Token eşlemesi (renk, boşluk, yazı) | `docs/token-map.md` |
+| Tasarım referansı: görev numarasıyla adlandırılmış taslak çizimler, doğrulama adımları | `docs/tasarim-referansi.md`, `docs/tasarim/*.svg` |
 | Ekip için kurulum ve akış | `CONTRIBUTING.md` |
 | Ekip rehberi: mimari, yapay zekâ ile geliştirme, skill ve agent kullanımı | `docs/ekip-rehberi.md` |
 | Betikler ve kullanımları | `tool/README.md` |
