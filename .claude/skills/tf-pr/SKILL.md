@@ -52,9 +52,9 @@ gh pr create --base main --title "feat(landing): projeler bölümünü ekle" --b
 
 ## Birleştirme
 
-- Koşul: CI yeşil + en az bir onay + şablon dolu.
+- Koşul: CI yeşil (`Kalite kapısı`) + şablon dolu. Ayrı onay şartı yok (D-36).
 - Yöntem: **squash**; `main`'e tek commit düşer.
-- Kim: proje sahibi ya da onun açıkça yetki verdiği kişi. **Claude kendiliğinden birleştirmez, auto-merge açmaz**; yalnızca kullanıcı o PR için açıkça isterse.
+- Kim: yalnızca proje sahibi; dal koruması başkasının birleştirmesine izin vermez (D-36). **Claude kendiliğinden birleştirmez, auto-merge açmaz**; yalnızca kullanıcı o PR için açıkça isterse.
 
 ## Rapor
 

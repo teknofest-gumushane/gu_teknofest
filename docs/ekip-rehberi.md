@@ -398,9 +398,9 @@ işaretli kutular **gerçekten** yapılmış mı; ekran görüntüsü eklenmiş 
 
 ### Adım 10 — İnceleme ve birleştirme
 
-- CI yeşil olmalı ve en az bir ekip arkadaşı onaylamalı.
+- CI (`Kalite kapısı`) yeşil olmalı; yeşil değilse GitHub birleştirmeye izin vermez. Ayrı bir onay şartı yok.
 - Yorum geldiyse: *"PR'daki inceleme yorumlarını oku ve tek tek cevapla; düzeltme gerekenleri yap."*
-- Birleştirmeyi proje sahibi yapar (squash). Sonra:
+- Birleştirmeyi **yalnızca proje sahibi** yapabilir (squash); `main` korumalıdır, başkasında düğme çalışmaz (D-36). Sonra:
 
   ```bash
   git switch main && git pull --ff-only origin main && git branch -d feat/12-projeler-bolumu
@@ -420,7 +420,8 @@ işaretli kutular **gerçekten** yapılmış mı; ekran görüntüsü eklenmiş 
 
 **Asla**
 
-1. `main`'e doğrudan commit (proje sahibinin açık isteği dışında).
+1. `main`'e doğrudan commit ya da push. GitHub zaten reddeder: dal korumalı, herkes PR açar ve yalnızca proje sahibi
+   birleştirir (D-36).
 2. Kırmızı kapıyla commit, `--no-verify`, `git push --force`.
 3. Referans siteden metin, fotoğraf, logo ya da kişi adı kopyalamak.
 4. Şifre, anahtar ya da kişisel veri (ad, e-posta, telefon) yapıştırmak: koda, issue'ya, PR'a, Claude'a.
@@ -531,7 +532,7 @@ Tamamı ve gerekçeleri: [`decisions.md`](decisions.md). Sormadan değiştirilme
 | Başvuru formu | Firestore'a yazar; admin'e "Başvurular" ekranı (D-14) |
 | Logo | Resmi TEKNOFEST logosu; değiştirilmez, yeniden çizilmez (D-24) |
 | Çalışma biçimi | Plan → onay → uygulama; seçenekli sorular pencereyle (D-25) |
-| Git akışı | Issue → dal → PR; squash; CI yeşil + bir onay (D-19, D-27) |
+| Git akışı | Issue → dal → PR; `main` korumalı: herkes PR açar, CI yeşil olmalı, yalnızca proje sahibi birleştirir (D-27, D-36) |
 | Kapsam dışı | AI asistan (D-17), web yayını (D-22) |
 
 ---

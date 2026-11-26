@@ -49,15 +49,16 @@ Her iş bir issue ile başlar, kendi dalında yürür ve bir PR ile `main`'e gir
    git push -u origin feat/12-projeler-bolumu
    ```
 
-6. **İnceleme:** CI yeşil ve en az bir onay gerekir. Yorumları yeni commit'lerle karşıla;
+6. **İnceleme:** CI (`Kalite kapısı`) yeşil olmalı; ayrı onay şartı yok, PR'ı proje sahibi inceler. Yorumları yeni commit'lerle karşıla;
    PR açıldıktan sonra `git push --force` ve `git rebase` yok. `main` ilerlediyse `git merge origin/main`.
-7. **Birleştirme:** squash ile, proje sahibi ya da yetki verdiği kişi tarafından. Sonra:
+7. **Birleştirme:** squash ile, **yalnızca proje sahibi** tarafından (`main` korumalıdır; başkasında birleştirme düğmesi
+   çalışmaz, D-36). Sonra:
 
    ```bash
    git switch main && git pull --ff-only origin main && git branch -d feat/12-projeler-bolumu
    ```
 
-`main`'e doğrudan commit atılmaz; tek istisna proje sahibinin açıkça istediği altyapı işleridir.
+`main`'e doğrudan commit ya da push yapılamaz: dal korumalıdır ve proje sahibi dahil herkes PR açar (D-36).
 
 ## Bir bölüme başlarken
 
